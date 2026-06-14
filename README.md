@@ -10,6 +10,21 @@ I am building Tuxenix from the ground up: package recipes, a working root filesy
 
 Focused on turning Linux From Scratch and BLFS source builds into a repeatable distribution workflow with real packages, real VM testing, and practical desktop/server usability.
 
+## Related Tooling
+
+The six support projects live in the public toolkit repo:
+
+**https://github.com/elgun-dev/tuxenix-toolkit**
+
+That repo includes:
+
+- package recipe linter
+- dependency graph generator
+- package explorer
+- build dashboard
+- LFS/Tuxenix boot lab notes
+- Tuxenix VM launcher/helper
+
 ## What This Project Is
 
 Tuxenix is an experimental Linux distribution built around source-based packaging and repeatable system construction. The current development setup uses an LFS/BLFS userspace, a custom package manager flow, and QEMU for fast boot and install testing.

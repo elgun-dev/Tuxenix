@@ -33,13 +33,14 @@ The goal is not just to compile packages. The goal is to make the system boot, i
 
 ## Current Milestone
 
-- Built and staged **309 original packages**.
-- Added **tty-clock** as package 310 and verified install through the package repo.
+- Built and staged a growing **300+ package** source set.
+- Added **tty-clock** as an early package-manager validation target and verified install through the package repo.
 - Booted Tuxenix in QEMU using a host kernel with a Tuxenix userspace.
 - Brought up **IceWM** and Xorg with virtio GPU support.
 - Set up an HTTP package repository and verified `txpk` can fetch packages over the network.
 - Validated a safe package install set with `safe100-result count=100 failed=0`.
 - Repaired kernel-module, locale, xterm/UTF-8, and X startup issues in the VM image.
+- Added a PC/laptop networking package set targeting common 2015+ x86_64 hardware: firmware, Wi-Fi auth, DHCP/DNS, NetworkManager, regulatory data, hardware diagnostics, and default inbound firewall wiring.
 
 ## Package Work
 
@@ -51,6 +52,9 @@ Recent package batches include terminal tools, file management, fonts, shells, a
 - `libfm`, `libfm-extra`, `menu-cache`, `lxmenu-data`
 - `nerd-font-jetbrains-mono`
 - `tty-clock`
+- `linux-firmware`
+- `tuxenix-networking`
+- `rfkill`, `wireless-regdb`, `ethtool`
 
 I also added package-purpose documentation across the tested package set so each recipe explains why the package matters to Tuxenix users or to the OS stack.
 
@@ -64,6 +68,8 @@ I also added package-purpose documentation across the tested package set so each
 - Fixed Xorg startup by matching guest kernel modules to the host kernel used by QEMU.
 - Added a `startx` wrapper so QEMU GPU modules load automatically.
 - Generated and installed a working UTF-8 locale so `uxterm`, IceWM, and terminal apps render correctly.
+- Added build-chroot DNS/CA certificate bootstrapping so package builds have reliable HTTPS basics after the chroot is recreated.
+- Added default NetworkManager service wiring plus conservative inbound firewall defaults for booted Tuxenix systems.
 
 ## System Pieces In Motion
 
@@ -73,6 +79,7 @@ I also added package-purpose documentation across the tested package set so each
 - **Repository:** local package repo synced to an HTTP server.
 - **VM:** QEMU image used for real boot, install, and GUI validation.
 - **Desktop:** Xorg, IceWM, xterm/uxterm, fonts, and lightweight file-manager stack.
+- **Networking:** firmware, NetworkManager, Wi-Fi tooling, DHCP/DNS support, regulatory database, diagnostics, and firewall defaults for real PC/laptop testing.
 
 ## Why This Matters
 
@@ -82,4 +89,4 @@ This is low-level distribution engineering: package metadata, build scripts, run
 
 Active development. The system boots, installs packages from an HTTP repo, runs a lightweight GUI, and has a growing package set with tested recipes.
 
-Next targets are cleaner package ownership, broader desktop usability, more reproducible VM setup, and continued BLFS package expansion.
+Next targets are cleaner package ownership, broader desktop usability, real-hardware network validation across common laptops/desktops, more reproducible VM setup, and continued BLFS package expansion.

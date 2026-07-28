@@ -1,92 +1,164 @@
 # Tuxenix
 
-**LFS-based Linux distribution workbench by elgun-dev**
+**An LFS/BLFS Linux distribution built from source, packaged with `txpk`, and
+booted by dinit.**
 
-I am building Tuxenix from the ground up: package recipes, a working root filesystem, a custom package flow, QEMU boot testing, and a usable lightweight desktop stack. This repo tracks the public-facing story of that work.
+[Website](https://tuxenix.org/) ·
+[Download ISO](https://tuxenix.org/iso/tuxenix-dinit-desktop-latest.iso) ·
+[Package catalog](https://tuxenix.org/packages.html) ·
+[Installation guide](https://tuxenix.org/install.html)
 
-## Role
+I am building Tuxenix from the ground up: package recipes, a custom package
+flow, a bootable installer, a public package repository, a lightweight desktop,
+and a native dinit service graph. This repository tracks the public story and
+major engineering milestones.
 
-**Tuxenix Developer**
+## Latest Milestone: Public Dinit Desktop Release
 
-Focused on turning Linux From Scratch and BLFS source builds into a repeatable distribution workflow with real packages, real VM testing, and practical desktop/server usability.
+Tuxenix is now a publicly downloadable, real-hardware-tested Linux desktop:
 
-## Related Tooling
+- **473 compiled package archives** are available from the public HTTPS
+  repository.
+- A **2.6 GiB hybrid BIOS/UEFI ISO** boots a live IceWM desktop and launches
+  the Calamares installer.
+- Installed systems use **dinit as PID 1**, with systemd-compatible runtime
+  libraries only where the hardware and desktop stack require them.
+- The installer contains a seeded and integrity-checked `txpk` database.
+- `txpk` uses the public `https://tuxenix.org` repository with a working CA
+  certificate path.
+- NetworkManager, Wi-Fi, DNS, SSH, ALSA audio, Xorg, IceWM, and Brave are
+  integrated into the desktop profile.
+- Wi-Fi profiles created in the live environment are securely preserved for
+  the installed system.
+- The graphical desktop remains opt-in: log in and type `startx` to launch
+  IceWM.
 
-The six support projects live in the public toolkit repo:
+## Download and Verify
 
-**https://github.com/elgun-dev/tuxenix-toolkit**
+```sh
+curl -O https://tuxenix.org/iso/tuxenix-dinit-desktop-latest.iso
+curl -O https://tuxenix.org/iso/tuxenix-dinit-desktop-latest.iso.sha256
+sha256sum -c tuxenix-dinit-desktop-latest.iso.sha256
+```
 
-That repo includes:
+Current ISO SHA-256:
 
-- package recipe linter
-- dependency graph generator
-- package explorer
-- build dashboard
-- LFS/Tuxenix boot lab notes
-- Tuxenix VM launcher/helper
+```text
+f5e3a7953fcb2bbb267af66b5ad65f763938767559239fa15fae6ff23ff1b58c
+```
 
-## What This Project Is
+The full package catalog and direct archive downloads are available at
+[tuxenix.org/packages.html](https://tuxenix.org/packages.html).
 
-Tuxenix is an experimental Linux distribution built around source-based packaging and repeatable system construction. The current development setup uses an LFS/BLFS userspace, a custom package manager flow, and QEMU for fast boot and install testing.
+## Proven End to End
 
-The goal is not just to compile packages. The goal is to make the system boot, install software, recover from bad package states, serve packages over HTTP, and run a usable graphical session.
+The current release has been exercised across the full distribution path:
 
-## Current Milestone
+- built packages from LFS/BLFS-oriented source recipes;
+- generated a complete installed root filesystem and live installer;
+- created El Torito BIOS and UEFI boot structures;
+- booted the ISO through GRUB and reached the live installer in QEMU;
+- installed and tested Tuxenix on a Lenovo ThinkPad;
+- connected to Wi-Fi and verified reconnection persistence;
+- launched IceWM with `startx`;
+- ran Brave with working YouTube video;
+- enabled ALSA audio, persistent volume state, and multimedia volume control;
+- started OpenSSH automatically as a dinit-managed service;
+- served the ISO and all packages from the public HTTPS repository;
+- verified all 476 entries in the release checksum manifest; and
+- streamed the public 2.6 GiB ISO back over HTTP and matched it byte for byte.
 
-- Built and staged a growing **300+ package** source set.
-- Added **tty-clock** as an early package-manager validation target and verified install through the package repo.
-- Booted Tuxenix in QEMU using a host kernel with a Tuxenix userspace.
-- Brought up **IceWM** and Xorg with virtio GPU support.
-- Set up an HTTP package repository and verified `txpk` can fetch packages over the network.
-- Validated a safe package install set with `safe100-result count=100 failed=0`.
-- Repaired kernel-module, locale, xterm/UTF-8, and X startup issues in the VM image.
-- Added a PC/laptop networking package set targeting common 2015+ x86_64 hardware: firmware, Wi-Fi auth, DHCP/DNS, NetworkManager, regulatory data, hardware diagnostics, and default inbound firewall wiring.
+## Architecture
 
-## Package Work
+| Layer | Tuxenix implementation |
+| --- | --- |
+| Userspace | Linux From Scratch and Beyond Linux From Scratch foundations |
+| Package format | `.txpk.tar.bz2` archives with `package.yml` metadata |
+| Package manager | `txpk` |
+| Init system | dinit |
+| Networking | NetworkManager, `wpa_supplicant`, persistent connection profiles |
+| Desktop | Xorg, IceWM, xterm, libinput, Liberation fonts |
+| Browser | Brave |
+| Audio | ALSA utilities, dinit state restoration, persistent volume |
+| Installer | Live IceWM session with Calamares |
+| Boot media | Hybrid BIOS/UEFI ISO |
+| Repository | Static HTTPS package indexes at `tuxenix.org` |
 
-Recent package batches include terminal tools, file management, fonts, shells, and desktop components:
+## Native Dinit Boot Graph
 
-- `fish` and `fisher`
-- `vifm`
-- `pcmanfm`
-- `libfm`, `libfm-extra`, `menu-cache`, `lxmenu-data`
-- `nerd-font-jetbrains-mono`
-- `tty-clock`
-- `linux-firmware`
-- `tuxenix-networking`
-- `rfkill`, `wireless-regdb`, `ethtool`
+The installed image enables native dinit services for:
 
-I also added package-purpose documentation across the tested package set so each recipe explains why the package matters to Tuxenix users or to the OS stack.
+- filesystems;
+- kernel modules;
+- NetworkManager;
+- OpenSSH;
+- ALSA state restoration; and
+- the Tuxenix firewall.
 
-## Notable Fixes
+The SSH service prepares its service account, runtime directories, and host
+keys before executing `sshd -D`, allowing it to start automatically on a clean
+installation.
 
-- Fixed GLib packaging so real GLib libraries and pkg-config files are installed correctly.
-- Patched Fish build behavior for current CMake policy handling.
-- Fixed `libfm-extra` and `libfm` include installation so package archives preserve the expected headers.
-- Patched `menu-cache` for GCC 15 compatibility.
-- Patched `pcmanfm` for stricter compiler and GTK/ATK issues.
-- Fixed Xorg startup by matching guest kernel modules to the host kernel used by QEMU.
-- Added a `startx` wrapper so QEMU GPU modules load automatically.
-- Generated and installed a working UTF-8 locale so `uxterm`, IceWM, and terminal apps render correctly.
-- Added build-chroot DNS/CA certificate bootstrapping so package builds have reliable HTTPS basics after the chroot is recreated.
-- Added default NetworkManager service wiring plus conservative inbound firewall defaults for booted Tuxenix systems.
+## Notable Engineering Fixes
 
-## System Pieces In Motion
+- Seeded the package database during image creation and validated it before
+  completing the ISO.
+- Shipped a correct `/etc/txpk/pkg.yml` for the public repository.
+- Added explicit CA-bundle handling to the bundled `txpk` runtime.
+- Preserved NetworkManager Wi-Fi profiles with root ownership and `0600`
+  permissions.
+- Made plain `startx` launch `icewm-session` for normal desktop users.
+- Added a login message explaining that IceWM is available through `startx`.
+- Fixed UTF-8 locale generation so IceWM menus and terminal applications do
+  not crash.
+- Preserved Brave's required sandbox ownership and setuid mode.
+- Added audio, video, render, and input group access for desktop users.
+- Added ALSA utilities, volume defaults, state restoration, and dB-mapped
+  volume behavior.
+- Built the required laptop audio codecs into the Tuxenix kernel.
+- Added resumable, atomic release uploads and a forced-refresh mode for
+  same-sized checksum or HTML files.
 
-- **Package recipes:** `package.yml`, `build.sh`, and source archives under `os/1-lts/<package>`.
-- **Package manager:** `txpk` for install/fetch testing.
-- **Build flow:** `tx-build` inside a build chroot.
-- **Repository:** local package repo synced to an HTTP server.
-- **VM:** QEMU image used for real boot, install, and GUI validation.
-- **Desktop:** Xorg, IceWM, xterm/uxterm, fonts, and lightweight file-manager stack.
-- **Networking:** firmware, NetworkManager, Wi-Fi tooling, DHCP/DNS support, regulatory database, diagnostics, and firewall defaults for real PC/laptop testing.
+## Source and Tooling
 
-## Why This Matters
+- **Public project overview:** this repository
+- **Toolkit and ISO builder:**
+  [elgun-dev/tuxenix-toolkit](https://github.com/elgun-dev/tuxenix-toolkit)
+- **Installer source (GitLab; sign-in may be required):**
+  [Tuxenix installer dinit branch](https://gitlab.anysolo.com/opensource/anysolo-linux/installer/-/tree/tuxenix-dinit-forge)
+- **Package recipes and dinit services (GitLab; sign-in may be required):**
+  [Tuxenix package sources dinit branch](https://gitlab.anysolo.com/opensource/anysolo-linux/pkg-sources/-/tree/tuxenix-dinit-forge)
+- **Public package repository:**
+  [tuxenix.org/1-lts](https://tuxenix.org/1-lts/)
 
-This is low-level distribution engineering: package metadata, build scripts, runtime dependencies, filesystem layout, boot behavior, X11, kernel modules, package repositories, and VM testing all have to line up. Tuxenix is where I am putting those pieces together and proving them under a running system.
+The toolkit provides package linting, dependency graphs, build dashboards,
+root-filesystem generation, ISO creation, public catalog generation, release
+uploading, and QEMU boot helpers.
+
+## Installation Notes
+
+Write the ISO to a USB drive and boot it through the machine's BIOS/UEFI boot
+menu. In Calamares manual partitioning:
+
+- choose the desired Linux partition, format it, and mount it at `/`;
+- choose the EFI System Partition and mount it at `/boot/efi`; and
+- only format the EFI partition when it is dedicated to Tuxenix and its
+  existing contents are no longer needed.
+
+After installation, connect to Wi-Fi if necessary, log in as the normal user,
+and run:
+
+```sh
+startx
+```
 
 ## Status
 
-Active development. The system boots, installs packages from an HTTP repo, runs a lightweight GUI, and has a growing package set with tested recipes.
+Active development. Tuxenix now boots, installs graphically, runs on real
+laptop hardware, reconnects to Wi-Fi, serves packages publicly over HTTPS,
+runs a dinit-managed desktop/server service graph, launches Brave, and plays
+video with working audio.
 
-Next targets are cleaner package ownership, broader desktop usability, real-hardware network validation across common laptops/desktops, more reproducible VM setup, and continued BLFS package expansion.
+Next targets include broader hardware validation, smaller live-media memory
+requirements, package signing, stronger package-transaction recovery, and
+continued LFS/BLFS package expansion.

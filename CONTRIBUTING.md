@@ -36,7 +36,8 @@ step and the evidence for the replacement. Use conventional command names,
 copyable examples and links to the relevant dated release.
 
 Keep [the overview](README.md), [getting started](docs/getting-started.md) and
-[release status](docs/status.md) consistent. When recording a release:
+[release status](docs/status.md) consistent. Add dated milestones to the
+[progress log](docs/progress.md) and its README timeline. When recording a release:
 
 - Use the dated artifact URL, exact size and SHA-256.
 - Identify which tests used the final artifact and which used an earlier build.

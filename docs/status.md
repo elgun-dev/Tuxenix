@@ -1,6 +1,6 @@
 # Release and test status
 
-[← Tuxenix](../README.md) · [Get started](getting-started.md)
+[← Tuxenix](../README.md) · [Get started](getting-started.md) · [Full progress log](progress.md)
 
 Recorded **October 29, 2026**. Image releases, package updates and source
 integration are listed separately because they reach users at different times.

@@ -11,6 +11,7 @@ system starts at a text login. Run `startx` when you want the desktop.
 [Download](https://tuxenix.org/iso/tuxenix-dinit-desktop-2026-10-22.iso) ·
 [Get started](docs/getting-started.md) ·
 [Packages](https://tuxenix.org/packages.html) ·
+[Progress](docs/progress.md) ·
 [Release status](docs/status.md) ·
 [Website](https://tuxenix.org/)
 
@@ -76,7 +77,34 @@ Most of the distribution work happens where components meet:
 
 [Engineering notes: problems, changes and evidence →](docs/engineering.md)
 
-## Released and in progress
+## Development progress
+
+The recorded work runs from the first package builds in June to the current
+installer and desktop integration. These milestones include experiments and
+fixes as well as releases; the dates do not all represent downloadable images.
+
+| Date, 2026 | Progress | Result at that stage |
+| --- | --- | --- |
+| June 9–13 | Established the project, staged 310 packages, booted the LFS/BLFS userspace in QEMU and brought up IceWM/Xorg. | HTTP package installs worked; a selected 100-package install check passed. |
+| June 13–14 | Added recipe linting, dependency graphs, package/build reports and VM helpers; expanded firmware, networking and firewall packages. | A repeatable development workflow and a network stack ready for hardware testing. |
+| July 28 | Published the dinit desktop with Calamares, txpk and an HTTPS package repository. | ThinkPad testing covered Wi-Fi, IceWM, Brave/video, audio and SSH. |
+| August 5 | Published a smaller, roughly 935 MiB image; repaired runtime dependencies and boot setup. | Image structure and USB readback verified; full graphical/physical installation still needed testing then. |
+| September 17 | Added manual partition creation/editing, queued changes, Revert and layout validation alongside empty-drive setup. | A blank-disk VM installation booted independently. |
+| September 21 | Added shared-ESP installation and reinstallation that preserve existing loaders and partitions. | VM checks preserved neighboring data and booted both entries. |
+| September 28 | Fixed package ownership/mode ordering that stripped setuid/setgid permissions. | Installed-system `sudo`, `su`, password changes and normal-user desktop passed. |
+| October 1 | Integrated XLibre and its matching input driver. | Experimental install, desktop/input and virtual graphics tests passed; a test-runner defect remained. |
+| October 8 | Fixed legacy EFI-directory handling and unclear root-format/readiness controls. | Reinstallation preserved neighboring data; the new system booted without the ISO. |
+| October 12 | Fixed firmware-entry lookup and published the corrected ISO and redesigned website. | VM installation and public-download checks passed; physical laptop installation was user-confirmed. |
+| October 15 | Published 31 multilib/runtime packages, including the 32-bit library stack and Steam support. | Native and i686 libraries stayed separate; Steam startup was user-confirmed on the laptop. |
+| October 16 | Published Intel graphics/setup improvements, desktop repair/timezones, and AMD/open NVIDIA graphics and sound tools. | VM update, repair and startup checks passed; physical GPU/game coverage remained open. |
+| October 17 | Published a new image combining graphics, desktop tools, firmware and installer fixes. | Clean/shared-ESP installs, disk-only boot, normal-user desktop and Steam sign-in passed in VMs. |
+| October 19–22 | Added installer networking, partition units, GPT-only creation, automatic EFI flags and readable dialogs. | October 22 ISO published after final automatic-install and disk-only boot checks. |
+| October 26 | Added graphical Wi-Fi/power controls, an installer redesign and a Try/Install chooser. | Source and preview work; not a published replacement ISO. |
+| October 29 | Published `power-utils`; completed XLibre/multilib/dinit integration and repaired the hidden test failures and protocol bug. | Power commands released; integration tests passed and source merge requests remain open. |
+
+[Read the full progress log: changes, setbacks, tests and release boundaries →](docs/progress.md)
+
+## Current release and next work
 
 Status recorded **October 29, 2026**:
 

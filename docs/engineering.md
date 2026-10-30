@@ -95,10 +95,10 @@ The optional external XTS/Piglit suite was skipped. The final candidate pair
 was installed in a disposable guest and tested with normal-user desktop,
 keyboard/mouse input, resolution changes, software OpenGL, reboot and shutdown.
 
-**This is pending source integration.** The candidate server is package
+**This is tested source awaiting the protected GitLab main merge.** The candidate server is package
 25.1.9.1; the published image contains 25.1.9. See the
 [package merge request](https://gitlab.anysolo.com/opensource/anysolo-linux/pkg-sources/-/merge_requests/4)
-and [exact tested revisions](status.md#pending-source-integration).
+and [exact tested revisions](status.md#source-integration).
 
 ## What a release claim needs
 

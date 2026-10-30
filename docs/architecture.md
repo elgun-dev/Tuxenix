@@ -71,8 +71,8 @@ matching libinput module. The package name `xorg-server` and executable
 names `Xorg` and `X` are retained for compatibility with existing consumers.
 
 The October 22 manifest pins XLibre server package 25.1.9 and input driver
-25.0.1. The patched server package 25.1.9.1 belongs to the pending source
-integration. Server and driver compatibility must be checked together.
+25.0.1. The patched server package 25.1.9.1 is committed on the review branch and included in the October 30
+candidate. Server and driver compatibility must be checked together.
 
 Native libraries live under `/usr/lib`; the i686 runtime lives under
 `/usr/lib32`. This supports software that needs both architectures without
@@ -116,7 +116,7 @@ private and is not a public source download. Cloning this overview repository
 does not give you the full distribution build tree.
 
 For source changes, use the active branches above and record exact revisions
-with test results. Their pending merge requests are listed in
-[release status](status.md#pending-source-integration). Third-party components
+with test results. Their pushed revisions and qualification are listed in
+[release status](status.md#source-integration). Third-party components
 retain their own licenses; this overview does not apply a blanket license to
 the distribution.

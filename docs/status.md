@@ -2,7 +2,7 @@
 
 [← Tuxenix](../README.md) · [Get started](getting-started.md) · [Full progress log](progress.md)
 
-Recorded **October 29, 2026**. Image releases, package updates and source
+Recorded **October 30, 2026**. Image releases, package updates and source
 integration are listed separately because they reach users at different times.
 
 ## Published image: October 22
@@ -34,7 +34,7 @@ files. See the [published notes](https://tuxenix.org/releases.html#installer-202
 and [source validation record](https://gitlab.anysolo.com/opensource/anysolo-linux/installer/-/blob/a3399119c6b72e51c2a6aeb35529521e931f1339/docs/releases/2026-10-22-validation.md).
 GitLab links may require sign-in.
 
-## What has been tested
+## October 22 test coverage
 
 | Area | Result and scope |
 | --- | --- |
@@ -76,44 +76,68 @@ The repository discovery check at publication counted **495 package names and
 [Published package notes](https://tuxenix.org/releases.html#power-2026-10-29) ·
 [Exact archive and hash](releases/2026-10-29-status.json)
 
-## Pending source integration
+## Source integration
 
-The October 29 handoff records these merge requests as **open and mergeable**.
-The source repositories' `main` branches had not received them:
+The tested package and installer work is committed and pushed to GitLab review
+branches. Direct pushes to protected `main` were rejected; the requested GitLab
+merge remains pending. The private GitHub toolkit main has the tested installer
+source. Complete the GitLab merges through [package MR !4](https://gitlab.anysolo.com/opensource/anysolo-linux/pkg-sources/-/merge_requests/4)
+and [installer MR !3](https://gitlab.anysolo.com/opensource/anysolo-linux/installer/-/merge_requests/3).
 
-- [Package MR !4](https://gitlab.anysolo.com/opensource/anysolo-linux/pkg-sources/-/merge_requests/4):
-  XLibre, multilib, dinit and desktop integration on `tuxenix-steam-multilib`.
-- [Installer MR !3](https://gitlab.anysolo.com/opensource/anysolo-linux/installer/-/merge_requests/3):
-  installer and desktop integration on `tuxenix-steam-publication`, including
-  `power-utils` in all installed dinit profiles.
-
-| Repository | Tested runtime code | Documentation head at handoff |
+| Repository | Pushed review revision | Candidate runtime revision |
 | --- | --- | --- |
-| Packages | `8c6380bee60cb47b0ed61d27f11ce989f506b6ce` | `c4d9d1247fdd5d0a42ccae8a2d8ae0339996159b` |
-| Installer | `fed77f0068fae0b0486d08c4fbeacd1ed2193a5c` | `0ebcb59db57bc21bb60ebf57f562ea98b3533304` |
+| Packages | [`e29a76b`](https://gitlab.anysolo.com/opensource/anysolo-linux/pkg-sources/-/commit/e29a76ba7804bc2d8a5b896ad1764a070c40492a) | `3d7890d` |
+| Installer | [`2eb1e22`](https://gitlab.anysolo.com/opensource/anysolo-linux/installer/-/commit/2eb1e22baa7317b0178da3fe2dec639ca9303cc8) | `0ebcb59` |
 
-The XLibre candidate uses server package 25.1.9.1 and input 25.0.1. Eight
-available server tests, both input-driver tests, 105 package Python tests and
-six harness scenarios passed; external XTS/Piglit was skipped. A fresh guest
-passed normal-user desktop, keyboard/mouse input, resolution change, software
-OpenGL, sudo reboot and shutdown. Installed candidate payloads matched their
-archives; core runtime and all 444 checked lib32 file hashes were preserved.
+Local merge and documentation commits preserve the tested runtime code.
+The XLibre fix repairs both hidden child-process test failures and a real
+input-protocol bug. Eight available server tests, both input tests and 105
+package Python tests passed; external XTS/Piglit was skipped.
 
-These results cover the tested source integration. The redesigned installer,
-new graphical desktop controls and patched server are not a new published
-ISO. The [XLibre engineering note](engineering.md#a-green-test-summary-hid-a-real-xlibre-bug)
-explains the runtime fix and the previously misleading test results.
+## October 30 candidate: Easy and Expert installer
 
-## Work needed before the next image release
+This is a tested local image, **not a published download**. Easy mode is the
+default: select an empty drive and prepare GPT, a 512 MiB FAT32 EFI System
+Partition, and the remaining usable space as ext4 root. An occupied drive is
+rejected. Expert retains the existing full partition controls. The title-bar
+button switches modes; a manual plan must be explicitly reverted before
+returning to Easy. No disk writes occur until installation is confirmed.
 
-| Work | Completion evidence needed |
+| Field | Value |
 | --- | --- |
-| Combined image | Build from pinned inputs, install the finished ISO and boot without live media. |
-| Graphical Wi-Fi and power controls | Complete connection and password-authenticated actions as a normal user. |
-| Physical hardware | Dated results identifying the adapter/GPU, driver, firmware and actual behavior. |
-| Graphics and games | Native and 32-bit acceleration checks, followed by named game/workload results. |
+| File | `tuxenix-desktop-2026-10-30-candidate.iso` |
+| Size | 1,340,993,536 bytes |
+| Installer | Calamares 3.4.2.21; settings 1.5.9 |
+| Desktop utilities | desktop-utils 1.0.6; xinit 1.4.4.6; power-utils 1.0.0 |
+| Display | XLibre server package 25.1.9.1; input driver 25.0.1 |
+| Inputs | [289 pinned archives](releases/2026-10-30-packages.json); 262 target packages, 285 live packages |
 
-These are qualification gaps, not promised delivery dates. Report a result
-with the [hardware form](https://github.com/elgun-dev/Tuxenix/issues/new?template=hardware-report.yml).
-The public [release timeline](https://tuxenix.org/releases.html) records when
-packages and images become available.
+SHA-256:
+
+```text
+20a1de35dc8cbbeae95bd4ceef840cd7d9624b9116df094c0c321a2ec1105ec7
+```
+
+| Check | Result |
+| --- | --- |
+| Source tests | 41 toolkit tests and six compiled installer suites passed, including synchronous model-reset regression coverage. |
+| Runtime libraries | Live and installed payload audits passed; no missing dependencies in 2,253 live and 2,004 target ELF files, including 363 32-bit files in each root. |
+| Mode controls | Repeated resets, plan preservation, explicit Revert and occupied-drive rejection passed. |
+| Final-image installation | Fresh Easy installation passed; zero target writes through Summary. |
+| Independent boot | Installed disk booted through Limine and dinit with the ISO removed. |
+| Desktop and versions | Normal-user desktop and installed package versions verified. |
+| Wi-Fi window | Opened and reported wired networking/no wireless adapter in the VM; no real Wi-Fi association tested. |
+| Graphical shutdown | Normal-user password authentication succeeded and the guest actually powered off. |
+
+## Remaining qualification and publication
+
+Physical graphics acceleration, games/Proton, real Wi-Fi association, suspend,
+Secure Boot and Windows/BitLocker remain unqualified. Graphical restart was not
+separately repeated on this final image. Earlier shared-ESP tests remain dated
+historical evidence, not a repeat on this candidate. The working laptop was
+not upgraded or reinstalled.
+
+Publishing the candidate binaries and updating the public download are separate
+release steps. The [handoff](handoff-2026-10-30.md) records what to continue from.
+Report hardware results with the
+[hardware form](https://github.com/elgun-dev/Tuxenix/issues/new?template=hardware-report.yml).

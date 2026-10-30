@@ -100,24 +100,27 @@ fixes as well as releases; the dates do not all represent downloadable images.
 | October 17 | Published a new image combining graphics, desktop tools, firmware and installer fixes. | Clean/shared-ESP installs, disk-only boot, normal-user desktop and Steam sign-in passed in VMs. |
 | October 19–22 | Added installer networking, partition units, GPT-only creation, automatic EFI flags and readable dialogs. | October 22 ISO published after final automatic-install and disk-only boot checks. |
 | October 26 | Added graphical Wi-Fi/power controls, an installer redesign and a Try/Install chooser. | Source and preview work; not a published replacement ISO. |
-| October 29 | Published `power-utils`; completed XLibre/multilib/dinit integration and repaired the hidden test failures and protocol bug. | Power commands released; integration tests passed and source merge requests remain open. |
+| October 29 | Published `power-utils`; completed XLibre/multilib/dinit integration and repaired the hidden test failures and protocol bug. | Power commands released; integration tests passed and merge requests opened. |
+
+| October 30 | Added Easy/Expert installer modes and rebuilt the image with current desktop utilities and XLibre fixes; pushed source for merge. | Fresh installation, disk-only boot, normal-user desktop and graphical shutdown passed. Candidate ISO remains unpublished. |
 
 [Read the full progress log: changes, setbacks, tests and release boundaries →](docs/progress.md)
 
 ## Current release and next work
 
-Status recorded **October 29, 2026**:
+Status recorded **October 30, 2026**:
 
 | Work | State |
 | --- | --- |
 | October 22 installer ISO | Published; remains the current image. |
 | `power-utils` 1.0.0 | Published October 29; adds `shutdown` and `reboot` using dinit. |
-| New desktop controls, installer changes and XLibre fixes | Tested source changes in open merge requests; not a new ISO release. |
+| New desktop controls, installer changes and XLibre fixes | Committed and pushed; GitLab main merge pending. Included in the tested October 30 candidate. |
+| Easy/Expert installer | Easy uses a blank drive: 512 MiB FAT32 EFI and remaining usable space for ext4 root. Expert retains full controls. |
 
-The next release needs a full installation test of the combined image.
-Physical graphics acceleration, games, Wi-Fi and the new graphical power
-controls also need their own results. Passing a VM test does not settle those
-questions.
+The combined October 30 image passed a fresh VM installation, boot without
+the ISO and password-authenticated graphical shutdown. Physical graphics
+acceleration, games, real Wi-Fi and suspend still need dated hardware results.
+The candidate has not replaced the public download.
 
 [Release details, test coverage and remaining work →](docs/status.md)
 

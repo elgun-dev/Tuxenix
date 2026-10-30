@@ -2,7 +2,7 @@
 
 [← Tuxenix](../README.md) · [Current release and tests](status.md) · [Engineering notes](engineering.md)
 
-This is the recorded progression from June 9 through October 29, 2026.
+This is the recorded progression from June 9 through October 30, 2026.
 Dates identify when a milestone was recorded or released. A development ISO,
 a successful VM test and a published image are different milestones; each
 entry keeps that distinction. Historical commands and old installer behavior
@@ -316,7 +316,33 @@ unpublished integration work. A full new-image installation, physical hardware,
 games and graphical power/authentication still need their own qualification.
 
 [Power command release](https://tuxenix.org/releases.html#power-2026-10-29) ·
-[Exact integration revisions and remaining work](status.md#pending-source-integration)
+[Exact integration revisions and remaining work](status.md#source-integration)
+
+## October 30 — Easy/Expert installer and combined image
+
+The installer gained an Easy mode for an empty drive, with a 512 MiB FAT32 EFI
+partition and the remaining usable space as ext4 root. Expert keeps the full
+controls. Mode switches preserve a prepared plan; returning from manual changes
+requires explicit Revert. Occupied disks are rejected in Easy mode.
+
+Testing exposed startup and partition-reset deadlocks and a reset worker crash.
+The fixes queue the startup notification, hold the partition-model reset lock
+across notifications, and retain devices while replacing the model. A new
+synchronous reset test covers the failure. Calamares 3.4.2.21 is the qualified
+revision; the intermediate .18/.19/.20 candidates were rejected.
+
+The rebuilt image includes desktop-utils 1.0.6, xinit 1.4.4.6, power-utils 1.0.0
+and XLibre 25.1.9.1. The final ISO passed installation to a fresh VM disk,
+boot without the ISO, normal-user desktop, version checks and authenticated
+graphical shutdown. All 41 toolkit tests, six compiled installer suites and
+runtime-library audits passed. Real hardware and Wi-Fi remain outside this test.
+
+Package and installer work was committed and pushed to the GitLab review
+branches. Protected-main merge access is still needed to complete integration. The
+private GitHub toolkit was synchronized with GitLab; older local edits were
+preserved on archive branches. The ISO remains a local candidate and the public
+download remains October 22. See the [exact current record](status.md#source-integration)
+and [handoff](handoff-2026-10-30.md).
 
 ## Evidence and maintenance
 

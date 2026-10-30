@@ -1,0 +1,40 @@
+name: Hardware report
+description: Record what works, fails or remains untested on a particular machine.
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Image, kernel and updates
+      description: Give the ISO date, uname -r output and relevant packages changed afterward.
+    validations:
+      required: true
+  - type: textarea
+    id: hardware
+    attributes:
+      label: Hardware or VM configuration
+      description: Include machine model, CPU, RAM, GPU, network adapters and firmware mode. Exclude serial numbers.
+    validations:
+      required: true
+  - type: textarea
+    id: results
+    attributes:
+      label: Results by feature
+      description: Mark each item passed, failed or untested. Describe the actual test rather than only saying it works.
+      value: |
+        - Live boot:
+        - Installation and boot without ISO:
+        - Normal-user desktop and input:
+        - Ethernet:
+        - Wi-Fi association and reconnection:
+        - Audible playback:
+        - Native and 32-bit graphics acceleration:
+        - Battery and suspend/resume:
+        - Shutdown and reboot:
+        - Games or other workloads (name them):
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and workarounds
+      description: Include relevant output, errors, test dates and any manual changes. Remove credentials and personal data.

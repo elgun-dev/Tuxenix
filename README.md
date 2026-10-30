@@ -1,164 +1,110 @@
 # Tuxenix
 
-**An LFS/BLFS Linux distribution built from source, packaged with `txpk`, and
-booted by dinit.**
+Tuxenix is an x86_64 Linux distribution built from Linux From Scratch and
+Beyond Linux From Scratch. It uses **dinit** for startup, **XLibre and IceWM**
+for the desktop, and **txpk** to install packages from its own repository.
 
-[Website](https://tuxenix.org/) ·
-[Download ISO](https://tuxenix.org/iso/tuxenix-dinit-desktop-latest.iso) ·
-[Package catalog](https://tuxenix.org/packages.html) ·
-[Installation guide](https://tuxenix.org/install.html)
+The project brings the whole system together: source recipes, compiled
+packages, boot services, a live image and a graphical installer. The installed
+system starts at a text login. Run `startx` when you want the desktop.
 
-I am building Tuxenix from the ground up: package recipes, a custom package
-flow, a bootable installer, a public package repository, a lightweight desktop,
-and a native dinit service graph. This repository tracks the public story and
-major engineering milestones.
+[Download](https://tuxenix.org/iso/tuxenix-dinit-desktop-2026-10-22.iso) ·
+[Get started](docs/getting-started.md) ·
+[Packages](https://tuxenix.org/packages.html) ·
+[Release status](docs/status.md) ·
+[Website](https://tuxenix.org/)
 
-## Latest Milestone: Public Dinit Desktop Release
+## Try Tuxenix
 
-Tuxenix is now a publicly downloadable, real-hardware-tested Linux desktop:
+The current image is **October 22, 2026**, approximately **1.22 GiB**.
+Installation uses **UEFI with Secure Boot disabled, a GPT disk and an ext4
+root partition**. Allow at least 20 GiB for root. A VM with a blank virtual
+disk is a useful place to start.
 
-- **473 compiled package archives** are available from the public HTTPS
-  repository.
-- A **2.6 GiB hybrid BIOS/UEFI ISO** boots a live IceWM desktop and launches
-  the Calamares installer.
-- Installed systems use **dinit as PID 1**, with systemd-compatible runtime
-  libraries only where the hardware and desktop stack require them.
-- The installer contains a seeded and integrity-checked `txpk` database.
-- `txpk` uses the public `https://tuxenix.org` repository with a working CA
-  certificate path.
-- NetworkManager, Wi-Fi, DNS, SSH, ALSA audio, Xorg, IceWM, and Brave are
-  integrated into the desktop profile.
-- Wi-Fi profiles created in the live environment are securely preserved for
-  the installed system.
-- The graphical desktop remains opt-in: log in and type `startx` to launch
-  IceWM.
-
-## Download and Verify
+Download the dated image and its checksum into the same directory:
 
 ```sh
-curl -O https://tuxenix.org/iso/tuxenix-dinit-desktop-latest.iso
-curl -O https://tuxenix.org/iso/tuxenix-dinit-desktop-latest.iso.sha256
-sha256sum -c tuxenix-dinit-desktop-latest.iso.sha256
+curl -fLO https://tuxenix.org/iso/tuxenix-dinit-desktop-2026-10-22.iso
+curl -fLO https://tuxenix.org/iso/tuxenix-dinit-desktop-2026-10-22.iso.sha256
+sha256sum -c tuxenix-dinit-desktop-2026-10-22.iso.sha256
 ```
 
-Current ISO SHA-256:
+Continue when verification reports `OK`. Follow the
+[installation walkthrough](docs/getting-started.md) for booting, partitioning
+and first login. Formatting the selected root partition erases its contents.
 
-```text
-f5e3a7953fcb2bbb267af66b5ad65f763938767559239fa15fae6ff23ff1b58c
-```
+The October 22 image passed a complete automatic installation and boot from
+the installed disk in QEMU. Physical hardware and real Wi-Fi association have
+not been qualified for this image. Earlier laptop results and October 17
+tests are recorded separately in the [test record](docs/status.md).
 
-The full package catalog and direct archive downloads are available at
-[tuxenix.org/packages.html](https://tuxenix.org/packages.html).
+## What is in the system
 
-## Proven End to End
+| Part | Implementation | What it means in use |
+| --- | --- | --- |
+| Base | LFS/BLFS packages, x86_64 | Tuxenix maintains its own recipes and compiled archives. |
+| Startup | dinit and native service definitions | Boot and service management do not require systemd as PID 1. |
+| Desktop | XLibre, IceWM, `startx` | A window manager and desktop tools, launched from your normal account. |
+| Packages | txpk, `.txpk.tar.bz2` archives | Install from the public `1-lts` HTTPS repository. |
+| Networking | NetworkManager and `wpa_supplicant` | Configure connections in the installer or with `nmtui`. |
+| Sound | ALSA and Sound Setup | Choose a playback device, test it and save its mixer state. |
+| Installer | Calamares with Tuxenix modules and settings | Network setup, timezone selection and an explicit partition plan. |
+| Graphics runtime | Native and i686 libraries | 32-bit applications have a separate runtime under `/usr/lib32`. |
 
-The current release has been exercised across the full distribution path:
+The display server is XLibre; its package is still named `xorg-server` for
+dependency compatibility. Some desktop applications use libraries supplied
+by `systemd-compat`. That package does not make systemd the init system.
 
-- built packages from LFS/BLFS-oriented source recipes;
-- generated a complete installed root filesystem and live installer;
-- created El Torito BIOS and UEFI boot structures;
-- booted the ISO through GRUB and reached the live installer in QEMU;
-- installed and tested Tuxenix on a Lenovo ThinkPad;
-- connected to Wi-Fi and verified reconnection persistence;
-- launched IceWM with `startx`;
-- ran Brave with working YouTube video;
-- enabled ALSA audio, persistent volume state, and multimedia volume control;
-- started OpenSSH automatically as a dinit-managed service;
-- served the ISO and all packages from the public HTTPS repository;
-- verified all 476 entries in the release checksum manifest; and
-- streamed the public 2.6 GiB ISO back over HTTP and matched it byte for byte.
+[How the system fits together →](docs/architecture.md)
 
-## Architecture
+## The work behind the image
 
-| Layer | Tuxenix implementation |
+Most of the distribution work happens where components meet:
+
+- **An installation that boots on its own.** The installer prepares the
+  target filesystem, package records and EFI files. Release tests remove the
+  ISO before booting the installed disk.
+- **A package database that describes real files.** Image construction
+  checks package records against retained payloads. Setup tools can repair
+  missing files when an older image still claims their package is installed.
+- **A usable desktop under dinit.** NetworkManager, its Wi-Fi supplicant,
+  device discovery and saved audio state need working service dependencies.
+  Installing their binaries alone is not enough.
+- **Tests that actually fail when the code fails.** Recent XLibre work fixed
+  a test runner that hid child-process failures, then exposed and repaired an
+  input-protocol bug. That patch is still pending release.
+
+[Engineering notes: problems, changes and evidence →](docs/engineering.md)
+
+## Released and in progress
+
+Status recorded **October 29, 2026**:
+
+| Work | State |
 | --- | --- |
-| Userspace | Linux From Scratch and Beyond Linux From Scratch foundations |
-| Package format | `.txpk.tar.bz2` archives with `package.yml` metadata |
-| Package manager | `txpk` |
-| Init system | dinit |
-| Networking | NetworkManager, `wpa_supplicant`, persistent connection profiles |
-| Desktop | Xorg, IceWM, xterm, libinput, Liberation fonts |
-| Browser | Brave |
-| Audio | ALSA utilities, dinit state restoration, persistent volume |
-| Installer | Live IceWM session with Calamares |
-| Boot media | Hybrid BIOS/UEFI ISO |
-| Repository | Static HTTPS package indexes at `tuxenix.org` |
+| October 22 installer ISO | Published; remains the current image. |
+| `power-utils` 1.0.0 | Published October 29; adds `shutdown` and `reboot` using dinit. |
+| New desktop controls, installer changes and XLibre fixes | Tested source changes in open merge requests; not a new ISO release. |
 
-## Native Dinit Boot Graph
+The next release needs a full installation test of the combined image.
+Physical graphics acceleration, games, Wi-Fi and the new graphical power
+controls also need their own results. Passing a VM test does not settle those
+questions.
 
-The installed image enables native dinit services for:
+[Release details, test coverage and remaining work →](docs/status.md)
 
-- filesystems;
-- kernel modules;
-- NetworkManager;
-- OpenSSH;
-- ALSA state restoration; and
-- the Tuxenix firewall.
+## About this repository
 
-The SSH service prepares its service account, runtime directories, and host
-keys before executing `sshd -D`, allowing it to start automatically on a clean
-installation.
+This is the public documentation and issue tracker for Tuxenix. It contains
+installation notes, engineering records and a pinned package manifest for
+the published image. The distribution's build sources live separately on
+GitLab; access may require sign-in. See the [source map](docs/architecture.md#source-map)
+for the active branches and their role.
 
-## Notable Engineering Fixes
+To report a failure, include the image date, hardware or VM configuration,
+steps to reproduce and the actual output. Reports of working hardware are
+useful too, as long as they say what was tested.
 
-- Seeded the package database during image creation and validated it before
-  completing the ISO.
-- Shipped a correct `/etc/txpk/pkg.yml` for the public repository.
-- Added explicit CA-bundle handling to the bundled `txpk` runtime.
-- Preserved NetworkManager Wi-Fi profiles with root ownership and `0600`
-  permissions.
-- Made plain `startx` launch `icewm-session` for normal desktop users.
-- Added a login message explaining that IceWM is available through `startx`.
-- Fixed UTF-8 locale generation so IceWM menus and terminal applications do
-  not crash.
-- Preserved Brave's required sandbox ownership and setuid mode.
-- Added audio, video, render, and input group access for desktop users.
-- Added ALSA utilities, volume defaults, state restoration, and dB-mapped
-  volume behavior.
-- Built the required laptop audio codecs into the Tuxenix kernel.
-- Added resumable, atomic release uploads and a forced-refresh mode for
-  same-sized checksum or HTML files.
-
-## Source and Tooling
-
-- **Public project overview:** this repository
-- **Toolkit and ISO builder:**
-  [elgun-dev/tuxenix-toolkit](https://github.com/elgun-dev/tuxenix-toolkit)
-- **Installer source (GitLab; sign-in may be required):**
-  [Tuxenix installer dinit branch](https://gitlab.anysolo.com/opensource/anysolo-linux/installer/-/tree/tuxenix-dinit-forge)
-- **Package recipes and dinit services (GitLab; sign-in may be required):**
-  [Tuxenix package sources dinit branch](https://gitlab.anysolo.com/opensource/anysolo-linux/pkg-sources/-/tree/tuxenix-dinit-forge)
-- **Public package repository:**
-  [tuxenix.org/1-lts](https://tuxenix.org/1-lts/)
-
-The toolkit provides package linting, dependency graphs, build dashboards,
-root-filesystem generation, ISO creation, public catalog generation, release
-uploading, and QEMU boot helpers.
-
-## Installation Notes
-
-Write the ISO to a USB drive and boot it through the machine's BIOS/UEFI boot
-menu. In Calamares manual partitioning:
-
-- choose the desired Linux partition, format it, and mount it at `/`;
-- choose the EFI System Partition and mount it at `/boot/efi`; and
-- only format the EFI partition when it is dedicated to Tuxenix and its
-  existing contents are no longer needed.
-
-After installation, connect to Wi-Fi if necessary, log in as the normal user,
-and run:
-
-```sh
-startx
-```
-
-## Status
-
-Active development. Tuxenix now boots, installs graphically, runs on real
-laptop hardware, reconnects to Wi-Fi, serves packages publicly over HTTPS,
-runs a dinit-managed desktop/server service graph, launches Brave, and plays
-video with working audio.
-
-Next targets include broader hardware validation, smaller live-media memory
-requirements, package signing, stronger package-transaction recovery, and
-continued LFS/BLFS package expansion.
+[Report a bug](https://github.com/elgun-dev/Tuxenix/issues/new?template=bug-report.yml) ·
+[Report hardware results](https://github.com/elgun-dev/Tuxenix/issues/new?template=hardware-report.yml) ·
+[Contribute](CONTRIBUTING.md)

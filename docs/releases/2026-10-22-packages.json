@@ -1,0 +1,3134 @@
+{
+  "schema_version": 1,
+  "release": "2026-10-22",
+  "profile": "dinit-icewm-gaming",
+  "installer_ui": "calamares-lean",
+  "packages": [
+    {
+      "name": "acl",
+      "version": "2.3.2",
+      "arch": "x64",
+      "path": "1-lts/acl/2.3.2/acl-2.3.2-x64.txpk.tar.bz2",
+      "sha256": "812bbfcef20400bac6790ff4aa4037227c9588ee959e54bfa461491c24b58e4c",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "alsa-lib",
+      "version": "1.2.15.3",
+      "arch": "x64",
+      "path": "1-lts/alsa-lib/1.2.15.3/alsa-lib-1.2.15.3-x64.txpk.tar.bz2",
+      "sha256": "72d8d4616f70ccc86b79a02b2f18e9fb4aecc55c0e56e77f3e29c8123c4ea577",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "alsa-utils",
+      "version": "1.2.16",
+      "arch": "x64",
+      "path": "1-lts/alsa-utils/1.2.16/alsa-utils-1.2.16-x64.txpk.tar.bz2",
+      "sha256": "1962ed3c8f33812d7df37de15786340490b24a5db8c0f77b6f9fd15a2e01c1bb",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "amd-gpu-firmware",
+      "version": "20260916",
+      "arch": "x64",
+      "path": "1-lts/amd-gpu-firmware/20260916/amd-gpu-firmware-20260916-x64.txpk.tar.bz2",
+      "sha256": "b9457ad290d2615c142de148e168c341d4d8a64220cff93abb32b2a84880c3aa",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "amd-graphics",
+      "version": "1.0.0",
+      "arch": "x64",
+      "path": "1-lts/amd-graphics/1.0.0/amd-graphics-1.0.0-x64.txpk.tar.bz2",
+      "sha256": "bbc573ae6dc812de613c38dd72f5d2732cb7594cf38c9935e36b335e6de8dcd0",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "argh",
+      "version": "1.3.2",
+      "arch": "x64",
+      "path": "1-lts/argh/1.3.2/argh-1.3.2-x64.txpk.tar.bz2",
+      "sha256": "1f31e70632ea3867aacd89d9eb870af7c4e219b11a95fd67c4e4bf70d931dcd8",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "attr",
+      "version": "2.5.2",
+      "arch": "x64",
+      "path": "1-lts/attr/2.5.2/attr-2.5.2-x64.txpk.tar.bz2",
+      "sha256": "2bb6e89c1eac783cd66df79d5cae0a6123e639efd26daab05b0f25a8c5f3627e",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "autoconf",
+      "version": "2.72",
+      "arch": "x64",
+      "path": "1-lts/autoconf/2.72/autoconf-2.72-x64.txpk.tar.bz2",
+      "sha256": "6e776657f0e8a426bb8b01e7f3db6a5e9dbc339a45b5aa9e32791665f9807622",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "automake",
+      "version": "1.18.1",
+      "arch": "x64",
+      "path": "1-lts/automake/1.18.1/automake-1.18.1-x64.txpk.tar.bz2",
+      "sha256": "c7d60afd0a36b19faa4d48f06d245e2569de28a5d8bf113bfd2ed0d4a949ead2",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "bash",
+      "version": "5.3",
+      "arch": "x64",
+      "path": "1-lts/bash/5.3/bash-5.3-x64.txpk.tar.bz2",
+      "sha256": "2a1621354ab8485b9c559165e7190c076ef4bdcf19d5a1264759139ea83d8243",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "binutils",
+      "version": "2.46.0",
+      "arch": "x64",
+      "path": "1-lts/binutils/2.46.0/binutils-2.46.0-x64.txpk.tar.bz2",
+      "sha256": "6e38a9dc2760ced862a853199117bed60b1ef89b399ec285491ff4c03e61fd01",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "bison",
+      "version": "3.8.2",
+      "arch": "x64",
+      "path": "1-lts/bison/3.8.2/bison-3.8.2-x64.txpk.tar.bz2",
+      "sha256": "83493d86da09eb9f01b856327cd019a99f946f51957a23187b38a2d2d09b01e6",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "brotli",
+      "version": "1.2.0",
+      "arch": "x64",
+      "path": "1-lts/brotli/1.2.0/brotli-1.2.0-x64.txpk.tar.bz2",
+      "sha256": "e392a168cfc69de738cf36b75bddbbf1e2791ee09b9b8d6036b12d5c187a78a1",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "btrfs-progs",
+      "version": "6.17.1",
+      "arch": "x64",
+      "path": "1-lts/btrfs-progs/6.17.1/btrfs-progs-6.17.1-x64.txpk.tar.bz2",
+      "sha256": "5eb7c840f566679617ff97e4cd4835e17c444decc8942df6af6a97e9e051b2a0",
+      "roots": [
+        "live"
+      ]
+    },
+    {
+      "name": "bzip2",
+      "version": "1.0.8",
+      "arch": "x64",
+      "path": "1-lts/bzip2/1.0.8/bzip2-1.0.8-x64.txpk.tar.bz2",
+      "sha256": "c7aa24513434dbd36cb755bf58cad3b04840ec6530b770195e088b7c173ef77a",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "calamares",
+      "version": "3.4.2.16",
+      "arch": "x64",
+      "path": "1-lts/calamares/3.4.2.16/calamares-3.4.2.16-x64.txpk.tar.bz2",
+      "sha256": "eb6360a1bab142885a81e49c81ad6db04da45587752458094f56dad3be38fc66",
+      "roots": [
+        "live"
+      ]
+    },
+    {
+      "name": "calamares-settings-tuxenix",
+      "version": "1.5.8",
+      "arch": "x64",
+      "path": "1-lts/calamares-settings-tuxenix/1.5.8/calamares-settings-tuxenix-1.5.8-x64.txpk.tar.bz2",
+      "sha256": "64bb662608fc4b1509b243fc75feb763822a1dfa6025b82e262887e20e319d3d",
+      "roots": [
+        "live"
+      ]
+    },
+    {
+      "name": "cbindgen",
+      "version": "0.29.2",
+      "arch": "x64",
+      "path": "1-lts/cbindgen/0.29.2/cbindgen-0.29.2-x64.txpk.tar.bz2",
+      "sha256": "c368a35ecbf57b4cf84085510eb2f754b9a66b3c85bacb0e0787d2ed0cc7f8d3",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "cmake",
+      "version": "4.2.3",
+      "arch": "x64",
+      "path": "1-lts/cmake/4.2.3/cmake-4.2.3-x64.txpk.tar.bz2",
+      "sha256": "8aae32bb2a478096bec75f8193bcc9ad7166484ef3edc2756aeb910ec1f554c2",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "coreutils",
+      "version": "9.10",
+      "arch": "x64",
+      "path": "1-lts/coreutils/9.10/coreutils-9.10-x64.txpk.tar.bz2",
+      "sha256": "a0f02c35b51df7129b832d219b6a7c70fb8515f139887fefa906afe38d2fa483",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "cups",
+      "version": "2.4.17",
+      "arch": "x64",
+      "path": "1-lts/cups/2.4.17/cups-2.4.17-x64.txpk.tar.bz2",
+      "sha256": "ddcf964e5921a1803217b90f244a919d7d300c48b2ccdf93ce1e573386a14117",
+      "roots": [
+        "live"
+      ]
+    },
+    {
+      "name": "curl",
+      "version": "8.18.0.1",
+      "arch": "x64",
+      "path": "1-lts/curl/8.18.0.1/curl-8.18.0.1-x64.txpk.tar.bz2",
+      "sha256": "78ddb97e590344b339466152ec0701fbc767aa1601213dae1b3034b4555e9585",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "dbus",
+      "version": "1.16.2",
+      "arch": "x64",
+      "path": "1-lts/dbus/1.16.2/dbus-1.16.2-x64.txpk.tar.bz2",
+      "sha256": "0d62fc60631786d701472bcd2ddc0443863932abe095baf641fa8249ca785422",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "desktop-utils",
+      "version": "1.0.4",
+      "arch": "x64",
+      "path": "1-lts/desktop-utils/1.0.4/desktop-utils-1.0.4-x64.txpk.tar.bz2",
+      "sha256": "2a614417401642b012e6b677fd0661b12d90be3a22063e2a0d76b5ddcd8e7eb2",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "diffutils",
+      "version": "3.12",
+      "arch": "x64",
+      "path": "1-lts/diffutils/3.12/diffutils-3.12-x64.txpk.tar.bz2",
+      "sha256": "4532a0efb776ec04a794a10f8412d9347f36f0492a326ee80f9d383ddbb801f6",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "dinit",
+      "version": "0.20.0",
+      "arch": "x64",
+      "path": "1-lts/dinit/0.20.0/dinit-0.20.0-x64.txpk.tar.bz2",
+      "sha256": "66ab83b25f6261a529ad5ea465497f03c80d95b21f926b32fc1337c3e304fe51",
+      "roots": [
+        "target"
+      ]
+    },
+    {
+      "name": "docbook-xml",
+      "version": "4.5",
+      "arch": "x64",
+      "path": "1-lts/docbook-xml/4.5/docbook-xml-4.5-x64.txpk.tar.bz2",
+      "sha256": "c1ac58c50f5860d46b35f27df0f1150a27cbf040446a9a5fdc88574995c7c834",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "docbook-xsl-nons",
+      "version": "1.79.2",
+      "arch": "x64",
+      "path": "1-lts/docbook-xsl-nons/1.79.2/docbook-xsl-nons-1.79.2-x64.txpk.tar.bz2",
+      "sha256": "d0012cc4b23fdd0d0a64041e7457165c72be2a08cd457c70e7ef75efa2f4c707",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "dosfstools",
+      "version": "4.2",
+      "arch": "x64",
+      "path": "1-lts/dosfstools/4.2/dosfstools-4.2-x64.txpk.tar.bz2",
+      "sha256": "77de1ec198e5b173b84021b18760c7c346a76552f884f5fe53c070abdf34a105",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "e2fsprogs",
+      "version": "1.47.3.1",
+      "arch": "x64",
+      "path": "1-lts/e2fsprogs/1.47.3.1/e2fsprogs-1.47.3.1-x64.txpk.tar.bz2",
+      "sha256": "18b31cca6c0a75048055e7a5e81017ba08a2c33572a45b2c0de96f8492d0b3f2",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "efibootmgr",
+      "version": "18.1",
+      "arch": "x64",
+      "path": "1-lts/efibootmgr/18.1/efibootmgr-18.1-x64.txpk.tar.bz2",
+      "sha256": "f37347155ed80e93896faf81a2e333db872762a05c9b0928b4e203ce54f0af47",
+      "roots": [
+        "live"
+      ]
+    },
+    {
+      "name": "efivar",
+      "version": "39",
+      "arch": "x64",
+      "path": "1-lts/efivar/39/efivar-39-x64.txpk.tar.bz2",
+      "sha256": "1ddb507fc61c6fc4eb9ec5d0b177da653724eb8227155c9c0f453dd4be414e0a",
+      "roots": [
+        "live"
+      ]
+    },
+    {
+      "name": "elfutils",
+      "version": "0.194",
+      "arch": "x64",
+      "path": "1-lts/elfutils/0.194/elfutils-0.194-x64.txpk.tar.bz2",
+      "sha256": "f6566867aee29b8bf6fb88bb52090a099c27d76f0fd8b5bc75893d4529b8a386",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "encodings",
+      "version": "1.1.0",
+      "arch": "x64",
+      "path": "1-lts/encodings/1.1.0/encodings-1.1.0-x64.txpk.tar.bz2",
+      "sha256": "ca652cf4c87e0fe2963cc4e16c3d6e1264d2a5d167163def32c780930beb6381",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "expat",
+      "version": "2.7.4",
+      "arch": "x64",
+      "path": "1-lts/expat/2.7.4/expat-2.7.4-x64.txpk.tar.bz2",
+      "sha256": "0bd003b1eb57ef19f3b96cd48b8682a46ef859dacdb63fde3aa8a016d9e34bd1",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "extra-cmake-modules",
+      "version": "6.15.0",
+      "arch": "x64",
+      "path": "1-lts/extra-cmake-modules/6.15.0/extra-cmake-modules-6.15.0-x64.txpk.tar.bz2",
+      "sha256": "1a5e857794a87df5cc7347cc53c70f22c33dc69ae2ceb12b30a99456dfc10917",
+      "roots": [
+        "live"
+      ]
+    },
+    {
+      "name": "file",
+      "version": "5.46",
+      "arch": "x64",
+      "path": "1-lts/file/5.46/file-5.46-x64.txpk.tar.bz2",
+      "sha256": "d708863d5588072dbfca8f682e221cf766408f4fd2bc346ae75413169f0a495d",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "findutils",
+      "version": "4.10.0",
+      "arch": "x64",
+      "path": "1-lts/findutils/4.10.0/findutils-4.10.0-x64.txpk.tar.bz2",
+      "sha256": "b69b2384b0998df784f5073b054d9f85c888bb3ab52f74e76f70a522fc4013ef",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "flex",
+      "version": "2.6.4",
+      "arch": "x64",
+      "path": "1-lts/flex/2.6.4/flex-2.6.4-x64.txpk.tar.bz2",
+      "sha256": "16eac996b90a74b5d968b58fb59678d63a3887793ff5f2a6f8e1484fa9b783ea",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "flit-core",
+      "version": "3.12.0",
+      "arch": "x64",
+      "path": "1-lts/flit-core/3.12.0/flit-core-3.12.0-x64.txpk.tar.bz2",
+      "sha256": "10fb82a4cf881c2ba72c7ea2b1181a67f8200b898cce574bb75e01ae96dbd4fe",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "font-adobe-utopia-type1",
+      "version": "1.0.5",
+      "arch": "x64",
+      "path": "1-lts/font-adobe-utopia-type1/1.0.5/font-adobe-utopia-type1-1.0.5-x64.txpk.tar.bz2",
+      "sha256": "d08613bef9d55da9754641bb62209cff51e8472bac60b4e570912a27494bb06f",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "font-alias",
+      "version": "1.0.6",
+      "arch": "x64",
+      "path": "1-lts/font-alias/1.0.6/font-alias-1.0.6-x64.txpk.tar.bz2",
+      "sha256": "ff92f581d42d8156100e1af83753fff0fcd47eb4faa1bdb627c7226e68b288dd",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "font-bh-ttf",
+      "version": "1.0.4",
+      "arch": "x64",
+      "path": "1-lts/font-bh-ttf/1.0.4/font-bh-ttf-1.0.4-x64.txpk.tar.bz2",
+      "sha256": "cf27b111f232967528809bf408be8d3e758aea9d0343a426c0f727607ed77018",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "font-bh-type1",
+      "version": "1.0.4",
+      "arch": "x64",
+      "path": "1-lts/font-bh-type1/1.0.4/font-bh-type1-1.0.4-x64.txpk.tar.bz2",
+      "sha256": "b448ddc327f5eff82edd3d5801ee32e4883aa207bad0f1049285b8481a600963",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "font-ibm-type1",
+      "version": "1.0.4",
+      "arch": "x64",
+      "path": "1-lts/font-ibm-type1/1.0.4/font-ibm-type1-1.0.4-x64.txpk.tar.bz2",
+      "sha256": "e5cfaff6542152e91166c85b647c30b52c2d8d0a778759fdcb17a5e725758014",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "font-misc-ethiopic",
+      "version": "1.0.5",
+      "arch": "x64",
+      "path": "1-lts/font-misc-ethiopic/1.0.5/font-misc-ethiopic-1.0.5-x64.txpk.tar.bz2",
+      "sha256": "44a0b56cebd5a0e68daa11877b331974efdf5418d6f87820818348e3aeb97c62",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "font-util",
+      "version": "1.4.1",
+      "arch": "x64",
+      "path": "1-lts/font-util/1.4.1/font-util-1.4.1-x64.txpk.tar.bz2",
+      "sha256": "e186c8bda7d785951ec3514ac83d106a44d38946cbcb05bdd8e1e8559cceaea7",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "font-xfree86-type1",
+      "version": "1.0.5",
+      "arch": "x64",
+      "path": "1-lts/font-xfree86-type1/1.0.5/font-xfree86-type1-1.0.5-x64.txpk.tar.bz2",
+      "sha256": "0151031cfab7865367ce5533a65e684b0488859d63ca5aebcfd5b4aaf9eacf8e",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "fontconfig",
+      "version": "2.17.1",
+      "arch": "x64",
+      "path": "1-lts/fontconfig/2.17.1/fontconfig-2.17.1-x64.txpk.tar.bz2",
+      "sha256": "c78e33b48882bd1a5e77f394f831f0fdbc45eb434050e5373237e7c6ab7c19e6",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "fonts-liberation",
+      "version": "2.1.5",
+      "arch": "x64",
+      "path": "1-lts/fonts-liberation/2.1.5/fonts-liberation-2.1.5-x64.txpk.tar.bz2",
+      "sha256": "15187d7179318f0b36186304c017659c814168c010f6e534a19019c36f874440",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "freetype",
+      "version": "2.14.1",
+      "arch": "x64",
+      "path": "1-lts/freetype/2.14.1/freetype-2.14.1-x64.txpk.tar.bz2",
+      "sha256": "87aa9741a9f8b2daf15034adb5854a0095aac8352c9f86b4c75327491263ff00",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "gawk",
+      "version": "5.3.2",
+      "arch": "x64",
+      "path": "1-lts/gawk/5.3.2/gawk-5.3.2-x64.txpk.tar.bz2",
+      "sha256": "68d89a7ed09413c943662ef5dead29f0cd8069986f6e31efdc89e638ceadfe19",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "gcc",
+      "version": "15.2.0",
+      "arch": "x64",
+      "path": "1-lts/gcc/15.2.0/gcc-15.2.0-x64.txpk.tar.bz2",
+      "sha256": "db1fde28c6f8ce040c43b3713a05459470b1775c5e792b128005866e8b303b02",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "gdbm",
+      "version": "1.26",
+      "arch": "x64",
+      "path": "1-lts/gdbm/1.26/gdbm-1.26-x64.txpk.tar.bz2",
+      "sha256": "ca95bd8491e5fabf94bf201211cabb01dc0b4d9f56df613a6c3812861d71fa0b",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "gettext",
+      "version": "1.0",
+      "arch": "x64",
+      "path": "1-lts/gettext/1.0/gettext-1.0-x64.txpk.tar.bz2",
+      "sha256": "84105f855ab79134e21836c15c8c6500627b698b181b2599bd155d79e78acae8",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "giflib",
+      "version": "5.2.2",
+      "arch": "x64",
+      "path": "1-lts/giflib/5.2.2/giflib-5.2.2-x64.txpk.tar.bz2",
+      "sha256": "a4edfd4f51cb783270d36405f989c9bd1378f297fe83404548e8c3072275a2d1",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "glib",
+      "version": "2.86.4",
+      "arch": "x64",
+      "path": "1-lts/glib/2.86.4/glib-2.86.4-x64.txpk.tar.bz2",
+      "sha256": "6604e4e27d103851a48cd58a07325a8cd5350a18340c271d628dc4461b41294e",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "glibc",
+      "version": "2.43",
+      "arch": "x64",
+      "path": "1-lts/glibc/2.43/glibc-2.43-x64.txpk.tar.bz2",
+      "sha256": "3b31545f673f555e01e28a5f37bfc4f001d06ecd7c4644462ab44b9e45369a97",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "glslang",
+      "version": "16.2.0",
+      "arch": "x64",
+      "path": "1-lts/glslang/16.2.0/glslang-16.2.0-x64.txpk.tar.bz2",
+      "sha256": "b476679f4e8faf1a0568fc4b7ed576793ef2edef1e59ce48306edba6571c5141",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "gmp",
+      "version": "6.3.0",
+      "arch": "x64",
+      "path": "1-lts/gmp/6.3.0/gmp-6.3.0-x64.txpk.tar.bz2",
+      "sha256": "859b506a24a01b57ea0dbc59c2d417e3b9f402e40803a955e3f9a62f94b36fc4",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "gnutls",
+      "version": "3.8.12",
+      "arch": "x64",
+      "path": "1-lts/gnutls/3.8.12/gnutls-3.8.12-x64.txpk.tar.bz2",
+      "sha256": "158074494d8617f045cfba99a8dd26f6d4e72d6b4a58b09c7ea8c6f21b8eedc8",
+      "roots": [
+        "live"
+      ]
+    },
+    {
+      "name": "gperf",
+      "version": "3.3",
+      "arch": "x64",
+      "path": "1-lts/gperf/3.3/gperf-3.3-x64.txpk.tar.bz2",
+      "sha256": "9da0a7d15a70554f38516ea21bfbbf8b83b9c6a9727185fb72411a85614dbc06",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "gptfdisk",
+      "version": "1.0.10",
+      "arch": "x64",
+      "path": "1-lts/gptfdisk/1.0.10/gptfdisk-1.0.10-x64.txpk.tar.bz2",
+      "sha256": "a78ba6e6ffe1671b3397a6d977f19037aaeb2aac42aef5e8c66095780721f3dd",
+      "roots": [
+        "live"
+      ]
+    },
+    {
+      "name": "graphics-utils",
+      "version": "1.0.2",
+      "arch": "x64",
+      "path": "1-lts/graphics-utils/1.0.2/graphics-utils-1.0.2-x64.txpk.tar.bz2",
+      "sha256": "c4ae564fe692c76e700c1b713d6f9d86a1ac3453a50dd5b27c32dd93f6bc1d71",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "graphite2",
+      "version": "1.3.14",
+      "arch": "x64",
+      "path": "1-lts/graphite2/1.3.14/graphite2-1.3.14-x64.txpk.tar.bz2",
+      "sha256": "0514441a12cf206be820aa3e6a96ea28d3c57924f528038e0980fe216582d13d",
+      "roots": [
+        "live"
+      ]
+    },
+    {
+      "name": "grep",
+      "version": "3.12",
+      "arch": "x64",
+      "path": "1-lts/grep/3.12/grep-3.12-x64.txpk.tar.bz2",
+      "sha256": "c87caaf2076f5ee7b58582a5410501e9f6937990eca3a781059bae926468a4e0",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "gzip",
+      "version": "1.14",
+      "arch": "x64",
+      "path": "1-lts/gzip/1.14/gzip-1.14-x64.txpk.tar.bz2",
+      "sha256": "8e3cfb06f0f4d3730b6fc15665f849be48ee6e8cd5d06e8dadeddd42059b6c4a",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "harfbuzz",
+      "version": "14.2.0",
+      "arch": "x64",
+      "path": "1-lts/harfbuzz/14.2.0/harfbuzz-14.2.0-x64.txpk.tar.bz2",
+      "sha256": "c0721681bb64da6f7b50924a796b0a7857830d46c2885ba9d583b59c6490b534",
+      "roots": [
+        "live"
+      ]
+    },
+    {
+      "name": "iana-etc",
+      "version": "20260202",
+      "arch": "x64",
+      "path": "1-lts/iana-etc/20260202/iana-etc-20260202-x64.txpk.tar.bz2",
+      "sha256": "bc68cefc286e191e6894caefc5a7d7fd940ce7c1121cf9aa11854fcbea0f590a",
+      "roots": [
+        "target"
+      ]
+    },
+    {
+      "name": "icewm",
+      "version": "4.0.0.1",
+      "arch": "x64",
+      "path": "1-lts/icewm/4.0.0.1/icewm-4.0.0.1-x64.txpk.tar.bz2",
+      "sha256": "7ead9a6f696df2648a5317b486e9b42b69b6032aca9ad7049036435b4a33e7a9",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "imlib2",
+      "version": "1.12.6",
+      "arch": "x64",
+      "path": "1-lts/imlib2/1.12.6/imlib2-1.12.6-x64.txpk.tar.bz2",
+      "sha256": "afdb8653e9054fad29e186e29e4b9b4651aab8aa3d8179cf7192e6405d29564f",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "inetutils",
+      "version": "2.7",
+      "arch": "x64",
+      "path": "1-lts/inetutils/2.7/inetutils-2.7-x64.txpk.tar.bz2",
+      "sha256": "7a2cd12eebfb24dc89ce4f30e68bcef073bfe4059e0c37697466ba9a9f203fc3",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "inih",
+      "version": "62",
+      "arch": "x64",
+      "path": "1-lts/inih/62/inih-62-x64.txpk.tar.bz2",
+      "sha256": "1238442970b5430702db6d34a18b47308ba023f230fb4df89193ec5faa493a0f",
+      "roots": [
+        "live"
+      ]
+    },
+    {
+      "name": "intel-gpu-firmware",
+      "version": "20260519",
+      "arch": "x64",
+      "path": "1-lts/intel-gpu-firmware/20260519/intel-gpu-firmware-20260519-x64.txpk.tar.bz2",
+      "sha256": "1838235ff718390d9c0e5969b30ade900d96f4b9178b9641c300bfe1cca1c84c",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "iproute2",
+      "version": "6.18.0.1",
+      "arch": "x64",
+      "path": "1-lts/iproute2/6.18.0.1/iproute2-6.18.0.1-x64.txpk.tar.bz2",
+      "sha256": "294f4a28f327f6c92bc4d844b7fdd082820151a97c10d8339c52746bd96eaf5f",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "iputils",
+      "version": "20250605",
+      "arch": "x64",
+      "path": "1-lts/iputils/20250605/iputils-20250605-x64.txpk.tar.bz2",
+      "sha256": "a7dd43323a305d75c2feaa0a774c57703c0aba3a1a45ea8192f0b2c17ac6ed77",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "jinja2",
+      "version": "3.1.6",
+      "arch": "x64",
+      "path": "1-lts/jinja2/3.1.6/jinja2-3.1.6-x64.txpk.tar.bz2",
+      "sha256": "e0d0b4bc1ede6a690f80a3cb7cb67ffb510dcc03a689470cd1e211bec11fa826",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "kbd",
+      "version": "2.9.0",
+      "arch": "x64",
+      "path": "1-lts/kbd/2.9.0/kbd-2.9.0-x64.txpk.tar.bz2",
+      "sha256": "6fd505316927a816e6af8cb0e55fae9d99cd38c134714697322408325bd2453c",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "kcoreaddons",
+      "version": "6.15.0",
+      "arch": "x64",
+      "path": "1-lts/kcoreaddons/6.15.0/kcoreaddons-6.15.0-x64.txpk.tar.bz2",
+      "sha256": "67b64e9edd6ed035b049cf10c2fc0f78d1da2025aa814c2931c876f6e23f28bf",
+      "roots": [
+        "live"
+      ]
+    },
+    {
+      "name": "ki18n",
+      "version": "6.15.0",
+      "arch": "x64",
+      "path": "1-lts/ki18n/6.15.0/ki18n-6.15.0-x64.txpk.tar.bz2",
+      "sha256": "a73d6a6ea1e4b04bf22e883bce2fe260178b6e25a6baf78062ba7eb10222f4cb",
+      "roots": [
+        "live"
+      ]
+    },
+    {
+      "name": "kmod",
+      "version": "34.2",
+      "arch": "x64",
+      "path": "1-lts/kmod/34.2/kmod-34.2-x64.txpk.tar.bz2",
+      "sha256": "6073da4f83b7d01d49285b3c7a6797862ca9e113753668760a18757f7869b422",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "kpmcore",
+      "version": "25.04.3",
+      "arch": "x64",
+      "path": "1-lts/kpmcore/25.04.3/kpmcore-25.04.3-x64.txpk.tar.bz2",
+      "sha256": "3bb3ee5b29e288c60d07efa25b10f3e2a69432548adfedff9bad2a9cfdc9a4e9",
+      "roots": [
+        "live"
+      ]
+    },
+    {
+      "name": "kwidgetsaddons",
+      "version": "6.15.0",
+      "arch": "x64",
+      "path": "1-lts/kwidgetsaddons/6.15.0/kwidgetsaddons-6.15.0-x64.txpk.tar.bz2",
+      "sha256": "16a8764a43b354ff37227ae8d7d4985d0fef894e7183dc33fe7c46408a11b8dc",
+      "roots": [
+        "live"
+      ]
+    },
+    {
+      "name": "lib32-alsa-lib",
+      "version": "1.2.15.3",
+      "arch": "x64",
+      "path": "1-lts/lib32-alsa-lib/1.2.15.3/lib32-alsa-lib-1.2.15.3-x64.txpk.tar.bz2",
+      "sha256": "d4dec416e85775de7d790f8c12b2a6761cdbb336579010cfdd8389017a0fb966",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "lib32-elfutils",
+      "version": "0.194",
+      "arch": "x64",
+      "path": "1-lts/lib32-elfutils/0.194/lib32-elfutils-0.194-x64.txpk.tar.bz2",
+      "sha256": "856f24b14c4c83f09bb5a09c49634022a64969906a845e19d7a34a0dc70db07b",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "lib32-expat",
+      "version": "2.7.4",
+      "arch": "x64",
+      "path": "1-lts/lib32-expat/2.7.4/lib32-expat-2.7.4-x64.txpk.tar.bz2",
+      "sha256": "a8c143c3f774bc5c8ca9b62364431a7e82026963e584d8f22019663385218a7f",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "lib32-gcc-libs",
+      "version": "15.2.0",
+      "arch": "x64",
+      "path": "1-lts/lib32-gcc-libs/15.2.0/lib32-gcc-libs-15.2.0-x64.txpk.tar.bz2",
+      "sha256": "6af3bc77e2a128656b2a3e5002b90411a38f47e745c82cdb92c5d857e772b6f9",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "lib32-glibc",
+      "version": "2.43",
+      "arch": "x64",
+      "path": "1-lts/lib32-glibc/2.43/lib32-glibc-2.43-x64.txpk.tar.bz2",
+      "sha256": "d01f94a099e7a1c3b07bdd9897648b56928d350be052c15a053dbe4a5f235dc7",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "lib32-libX11",
+      "version": "1.8.13",
+      "arch": "x64",
+      "path": "1-lts/lib32-libX11/1.8.13/lib32-libX11-1.8.13-x64.txpk.tar.bz2",
+      "sha256": "41aeaf4750c7b83801815557377ee35aa792f32082a338872d297f75a225d9ae",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "lib32-libXScrnSaver",
+      "version": "1.2.5",
+      "arch": "x64",
+      "path": "1-lts/lib32-libXScrnSaver/1.2.5/lib32-libXScrnSaver-1.2.5-x64.txpk.tar.bz2",
+      "sha256": "af1faee0a66e9324f16c4927fbc299a254f4bcc162f2cb31a71d1c132d2cb1b4",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "lib32-libXau",
+      "version": "1.0.12",
+      "arch": "x64",
+      "path": "1-lts/lib32-libXau/1.0.12/lib32-libXau-1.0.12-x64.txpk.tar.bz2",
+      "sha256": "c83f4c2be46711a5e4a007897aaec4a98db9a244b7a37b2b682a8780c00d972d",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "lib32-libXcursor",
+      "version": "1.2.3",
+      "arch": "x64",
+      "path": "1-lts/lib32-libXcursor/1.2.3/lib32-libXcursor-1.2.3-x64.txpk.tar.bz2",
+      "sha256": "757a3a0d0fbc9301885bee0b309eb98950d1d9cee2addecc1a597051603201ef",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "lib32-libXdamage",
+      "version": "1.1.7",
+      "arch": "x64",
+      "path": "1-lts/lib32-libXdamage/1.1.7/lib32-libXdamage-1.1.7-x64.txpk.tar.bz2",
+      "sha256": "4a6476b8d0b03e85120bce200ce831d880d57b199d1b1331ca458f014e391745",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "lib32-libXdmcp",
+      "version": "1.1.5",
+      "arch": "x64",
+      "path": "1-lts/lib32-libXdmcp/1.1.5/lib32-libXdmcp-1.1.5-x64.txpk.tar.bz2",
+      "sha256": "32845489876641f1c591e2b8c423a81fdbbb97b6dcd7b059b81d7f619b3a7914",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "lib32-libXext",
+      "version": "1.3.7",
+      "arch": "x64",
+      "path": "1-lts/lib32-libXext/1.3.7/lib32-libXext-1.3.7-x64.txpk.tar.bz2",
+      "sha256": "77f7654f7bf7c6733bbe6729c23c6660b57a4360e3942c0d23720c2b095e12b1",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "lib32-libXfixes",
+      "version": "6.0.2",
+      "arch": "x64",
+      "path": "1-lts/lib32-libXfixes/6.0.2/lib32-libXfixes-6.0.2-x64.txpk.tar.bz2",
+      "sha256": "18875258866d14a0c99f0f5430dc2e1fde7a9dc577598b27d52c7b1cce6e5462",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "lib32-libXi",
+      "version": "1.8.2",
+      "arch": "x64",
+      "path": "1-lts/lib32-libXi/1.8.2/lib32-libXi-1.8.2-x64.txpk.tar.bz2",
+      "sha256": "dac41d308b51835e0c3c563e1af863aeb79dced0f462ea4d801f776c62e7f654",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "lib32-libXinerama",
+      "version": "1.1.6",
+      "arch": "x64",
+      "path": "1-lts/lib32-libXinerama/1.1.6/lib32-libXinerama-1.1.6-x64.txpk.tar.bz2",
+      "sha256": "d83994e970759cc02ac9758c7ad6c6bce70d0f719045c2b4b0b1367127f00179",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "lib32-libXrandr",
+      "version": "1.5.5",
+      "arch": "x64",
+      "path": "1-lts/lib32-libXrandr/1.5.5/lib32-libXrandr-1.5.5-x64.txpk.tar.bz2",
+      "sha256": "ed6d94645280dfdc9aa083850a75eba81cda8def12b497409ac543c41c4ceaf0",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "lib32-libXrender",
+      "version": "0.9.12",
+      "arch": "x64",
+      "path": "1-lts/lib32-libXrender/0.9.12/lib32-libXrender-0.9.12-x64.txpk.tar.bz2",
+      "sha256": "50968b5fe88b44d6ebb04d7eb3072aaa5552182f04b046b4d551cce62e60c4c4",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "lib32-libXxf86vm",
+      "version": "1.1.7",
+      "arch": "x64",
+      "path": "1-lts/lib32-libXxf86vm/1.1.7/lib32-libXxf86vm-1.1.7-x64.txpk.tar.bz2",
+      "sha256": "03ccef7aa37bcbb3f5a4eeeda8e3f65ca1bc7b191cf94eca8544b57f71362982",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "lib32-libdrm",
+      "version": "2.4.131",
+      "arch": "x64",
+      "path": "1-lts/lib32-libdrm/2.4.131/lib32-libdrm-2.4.131-x64.txpk.tar.bz2",
+      "sha256": "ecb447d4a855635abdcfc2c2bde440e840cac795c023d039b2f4f1c3b7aa2789",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "lib32-libpciaccess",
+      "version": "0.18.1",
+      "arch": "x64",
+      "path": "1-lts/lib32-libpciaccess/0.18.1/lib32-libpciaccess-0.18.1-x64.txpk.tar.bz2",
+      "sha256": "2e1e30ae8e0328eecd0249d8cae6ff2ad39d77a395b58bdf5993049f34dba914",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "lib32-libxcb",
+      "version": "1.17.0",
+      "arch": "x64",
+      "path": "1-lts/lib32-libxcb/1.17.0/lib32-libxcb-1.17.0-x64.txpk.tar.bz2",
+      "sha256": "9b1cab5e18b7ddb3f5a4a1c4d8846d3b65a6650bd9f0b6ea888d432b0978bacc",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "lib32-libxshmfence",
+      "version": "1.3.3",
+      "arch": "x64",
+      "path": "1-lts/lib32-libxshmfence/1.3.3/lib32-libxshmfence-1.3.3-x64.txpk.tar.bz2",
+      "sha256": "c158cf292eea069a90c0d1d7f7af25b7bbbfc713ae4b83ab816d1541ddfc0780",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "lib32-mesa",
+      "version": "25.3.5.2",
+      "arch": "x64",
+      "path": "1-lts/lib32-mesa/25.3.5.2/lib32-mesa-25.3.5.2-x64.txpk.tar.bz2",
+      "sha256": "1cdf49c84841c6101c79e841a887e97f431c38a893cf0255f9be1975becbdc4d",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "lib32-vulkan-loader",
+      "version": "1.4.341.0",
+      "arch": "x64",
+      "path": "1-lts/lib32-vulkan-loader/1.4.341.0/lib32-vulkan-loader-1.4.341.0-x64.txpk.tar.bz2",
+      "sha256": "e36ba2800240ba6aadbf4d3e0f2bf8a6a1a39cc08979aef9d9ba2a7bc12dc11f",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "lib32-zlib",
+      "version": "1.3.2",
+      "arch": "x64",
+      "path": "1-lts/lib32-zlib/1.3.2/lib32-zlib-1.3.2-x64.txpk.tar.bz2",
+      "sha256": "9a4d9fe20922f5e0d03b82301e002bfee9636f27e37bc3653e4308e3085ba666",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "lib32-zstd",
+      "version": "1.5.7",
+      "arch": "x64",
+      "path": "1-lts/lib32-zstd/1.5.7/lib32-zstd-1.5.7-x64.txpk.tar.bz2",
+      "sha256": "eb31c51fe7087e9fdf1b2b2a3e8f4a333bcb873de2de5f047bc7b284a892c66a",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libFS",
+      "version": "1.0.10",
+      "arch": "x64",
+      "path": "1-lts/libFS/1.0.10/libFS-1.0.10-x64.txpk.tar.bz2",
+      "sha256": "075e7a4f4c8251ce98e51d7fcdce1804763046d4b357dabaa47fb1b19a77f3b4",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libICE",
+      "version": "1.1.2",
+      "arch": "x64",
+      "path": "1-lts/libICE/1.1.2/libICE-1.1.2-x64.txpk.tar.bz2",
+      "sha256": "3dd731b7e034b82aa5f4935fac97df31bec0b0e0eb8dfb4b9509e590fe520698",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libSM",
+      "version": "1.2.6",
+      "arch": "x64",
+      "path": "1-lts/libSM/1.2.6/libSM-1.2.6-x64.txpk.tar.bz2",
+      "sha256": "cb9f307b074d306df52cdefaf468eff6d7a73166e0d828766518e0038373c2c4",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libX11",
+      "version": "1.8.13",
+      "arch": "x64",
+      "path": "1-lts/libX11/1.8.13/libX11-1.8.13-x64.txpk.tar.bz2",
+      "sha256": "6c5c322b488bb670de886a036a0b2097b07bceeec76d20e5b773379ae5bfe1f7",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libXScrnSaver",
+      "version": "1.2.5",
+      "arch": "x64",
+      "path": "1-lts/libXScrnSaver/1.2.5/libXScrnSaver-1.2.5-x64.txpk.tar.bz2",
+      "sha256": "fde66b43c375854d0561d1a416e65b7c5d00ecf6c5aabcdfae1b1adc1d071bd5",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libXau",
+      "version": "1.0.12",
+      "arch": "x64",
+      "path": "1-lts/libXau/1.0.12/libXau-1.0.12-x64.txpk.tar.bz2",
+      "sha256": "e8d6dfedac0149097227d14cf65a3f3505cfc5702800b5afa110f45db27c749d",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libXaw",
+      "version": "1.0.16",
+      "arch": "x64",
+      "path": "1-lts/libXaw/1.0.16/libXaw-1.0.16-x64.txpk.tar.bz2",
+      "sha256": "ec29b309cc73d1b23c65bfce97ccdb3ed3adffb5424aec98b56fbcc5b1d4d23f",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libXcomposite",
+      "version": "0.4.7",
+      "arch": "x64",
+      "path": "1-lts/libXcomposite/0.4.7/libXcomposite-0.4.7-x64.txpk.tar.bz2",
+      "sha256": "0094acedd75516e8bbf1db04360fd341fb754c93394e2cc7a2922b531ea43225",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libXcursor",
+      "version": "1.2.3",
+      "arch": "x64",
+      "path": "1-lts/libXcursor/1.2.3/libXcursor-1.2.3-x64.txpk.tar.bz2",
+      "sha256": "089be95867ea46256c6920e39f9536621dde53bce0c3c08b6e1b9f7f8ed4eb08",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libXdamage",
+      "version": "1.1.7",
+      "arch": "x64",
+      "path": "1-lts/libXdamage/1.1.7/libXdamage-1.1.7-x64.txpk.tar.bz2",
+      "sha256": "8d8c2d182538bab353cc538bb251e3e943f6966aca483349b20056969f1c4ac2",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libXdmcp",
+      "version": "1.1.5",
+      "arch": "x64",
+      "path": "1-lts/libXdmcp/1.1.5/libXdmcp-1.1.5-x64.txpk.tar.bz2",
+      "sha256": "90c3dcead3bb6f65a1c2537f216e73fa0a5b1204e089edef1ae271d9d6ac4746",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libXext",
+      "version": "1.3.7",
+      "arch": "x64",
+      "path": "1-lts/libXext/1.3.7/libXext-1.3.7-x64.txpk.tar.bz2",
+      "sha256": "2852b0a61b97c11f9b44b0db8ea10d790187d631e0d0713104abd2b79307b735",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libXfixes",
+      "version": "6.0.2",
+      "arch": "x64",
+      "path": "1-lts/libXfixes/6.0.2/libXfixes-6.0.2-x64.txpk.tar.bz2",
+      "sha256": "052cf0da3f99587e72f76e0fa5fffc63701e7d0569a5283ab9deb95354630add",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libXfont2",
+      "version": "2.0.7",
+      "arch": "x64",
+      "path": "1-lts/libXfont2/2.0.7/libXfont2-2.0.7-x64.txpk.tar.bz2",
+      "sha256": "bd8805fcf38c7d0261181dfed62b1ef0a0c196ed562c704f3f4b0f5de3f222e1",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libXft",
+      "version": "2.3.9",
+      "arch": "x64",
+      "path": "1-lts/libXft/2.3.9/libXft-2.3.9-x64.txpk.tar.bz2",
+      "sha256": "d8af55caf10704c9be99de37613c00939639dff1e14e9bfb99c7235782d6210f",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libXi",
+      "version": "1.8.2",
+      "arch": "x64",
+      "path": "1-lts/libXi/1.8.2/libXi-1.8.2-x64.txpk.tar.bz2",
+      "sha256": "62ed13f8cf71b529d5c55f28838abbbdafa50dab3b3b1072fc8807043a0d8e08",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libXinerama",
+      "version": "1.1.6",
+      "arch": "x64",
+      "path": "1-lts/libXinerama/1.1.6/libXinerama-1.1.6-x64.txpk.tar.bz2",
+      "sha256": "8e579d15d56a08cd2515df7340f4ec094caa7255f889fc676b7b4f5f0916f44d",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libXmu",
+      "version": "1.3.1",
+      "arch": "x64",
+      "path": "1-lts/libXmu/1.3.1/libXmu-1.3.1-x64.txpk.tar.bz2",
+      "sha256": "9e7bc70dec122df290ceea3ab155fadd1915be0299c43a54b48726eaf9c8f15f",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libXpm",
+      "version": "3.5.18",
+      "arch": "x64",
+      "path": "1-lts/libXpm/3.5.18/libXpm-3.5.18-x64.txpk.tar.bz2",
+      "sha256": "ec1c23b97f1fac105d350928b45e295d2b6ffc8ee06a106a20a6d9b372fe5e48",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libXpresent",
+      "version": "1.0.2",
+      "arch": "x64",
+      "path": "1-lts/libXpresent/1.0.2/libXpresent-1.0.2-x64.txpk.tar.bz2",
+      "sha256": "68293cf320e6564269593de3780ca5ab67091e85028fd40a3bbac76b8e72c34d",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libXrandr",
+      "version": "1.5.5",
+      "arch": "x64",
+      "path": "1-lts/libXrandr/1.5.5/libXrandr-1.5.5-x64.txpk.tar.bz2",
+      "sha256": "8108875d97ae0d7b45661328933dc0bd89e0f8edce49a1fb7655c087f982a42a",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libXrender",
+      "version": "0.9.12",
+      "arch": "x64",
+      "path": "1-lts/libXrender/0.9.12/libXrender-0.9.12-x64.txpk.tar.bz2",
+      "sha256": "29c6f80992f266b44b871d9236f55e0cc4161b5cf8f4617ef60b952e0544890d",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libXres",
+      "version": "1.2.3",
+      "arch": "x64",
+      "path": "1-lts/libXres/1.2.3/libXres-1.2.3-x64.txpk.tar.bz2",
+      "sha256": "dd641e3a662bb7ef42a0e3e923ac04cb5924a980bff477b44f8f6c0041ec688d",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libXt",
+      "version": "1.3.1",
+      "arch": "x64",
+      "path": "1-lts/libXt/1.3.1/libXt-1.3.1-x64.txpk.tar.bz2",
+      "sha256": "cccd6316679702ebb4359ddfbce72947b80b801ad0985a5632eaf02780a0859e",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libXtst",
+      "version": "1.2.5",
+      "arch": "x64",
+      "path": "1-lts/libXtst/1.2.5/libXtst-1.2.5-x64.txpk.tar.bz2",
+      "sha256": "72742bfbffdd657d1ea017342bb7058b64659eab39f884576b9c2bbbe0a538b6",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libXv",
+      "version": "1.0.13",
+      "arch": "x64",
+      "path": "1-lts/libXv/1.0.13/libXv-1.0.13-x64.txpk.tar.bz2",
+      "sha256": "d4f2240ace83a853c5d829c61cf7f071f682aee3d777c11c76eb6cc78791b0d0",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libXvMC",
+      "version": "1.0.15",
+      "arch": "x64",
+      "path": "1-lts/libXvMC/1.0.15/libXvMC-1.0.15-x64.txpk.tar.bz2",
+      "sha256": "89b33f4f824f1658382d4b67e322b37b8bf9e2feaec8f3f232b9ad855d6070f5",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libXxf86dga",
+      "version": "1.1.7",
+      "arch": "x64",
+      "path": "1-lts/libXxf86dga/1.1.7/libXxf86dga-1.1.7-x64.txpk.tar.bz2",
+      "sha256": "423670ba5fc83ebec36af74339516d9ac655c72996238160a9cb906227ed9fe3",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libXxf86vm",
+      "version": "1.1.7",
+      "arch": "x64",
+      "path": "1-lts/libXxf86vm/1.1.7/libXxf86vm-1.1.7-x64.txpk.tar.bz2",
+      "sha256": "e41e6faa919172ac23e9d18f6b6fdaddb64976bf3d0806bac025c743aa684650",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libaio",
+      "version": "0.3.113",
+      "arch": "x64",
+      "path": "1-lts/libaio/0.3.113/libaio-0.3.113-x64.txpk.tar.bz2",
+      "sha256": "89918b10a2cd29afcb29842c9b0a17a7477e9ac86626f5dd7e97ecc57b281ebc",
+      "roots": [
+        "live"
+      ]
+    },
+    {
+      "name": "libarchive",
+      "version": "3.8.1",
+      "arch": "x64",
+      "path": "1-lts/libarchive/3.8.1/libarchive-3.8.1-x64.txpk.tar.bz2",
+      "sha256": "f2c5fe7de90d4410182072947695ebd6392f06ac0e399600101ae5e4a46ca555",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libcap",
+      "version": "2.77",
+      "arch": "x64",
+      "path": "1-lts/libcap/2.77/libcap-2.77-x64.txpk.tar.bz2",
+      "sha256": "5959bcdf8d11c5a59b58f0018ebdaa123c0169a0cc40327fcec68e5b0bd8be27",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libclc",
+      "version": "21.1.8",
+      "arch": "x64",
+      "path": "1-lts/libclc/21.1.8/libclc-21.1.8-x64.txpk.tar.bz2",
+      "sha256": "7023410fa699533bcdb5f000b7907d4e95119f8e971c2bbcc7f75f1d89eddc7c",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libdrm",
+      "version": "2.4.131",
+      "arch": "x64",
+      "path": "1-lts/libdrm/2.4.131/libdrm-2.4.131-x64.txpk.tar.bz2",
+      "sha256": "26079959b336cfb20d100f3281df680f100191dae4ad23ae1c3cd3d5917bfb07",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libepoxy",
+      "version": "1.5.10",
+      "arch": "x64",
+      "path": "1-lts/libepoxy/1.5.10/libepoxy-1.5.10-x64.txpk.tar.bz2",
+      "sha256": "704aea2185ac5beb84e209525480578a74514ec372a7b49811c93ddbdbce6939",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libevdev",
+      "version": "1.13.6",
+      "arch": "x64",
+      "path": "1-lts/libevdev/1.13.6/libevdev-1.13.6-x64.txpk.tar.bz2",
+      "sha256": "52c30069fb2aeae023367ac46cfac36d88484e0215367a933d1a581a763f1709",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libffi",
+      "version": "3.5.2",
+      "arch": "x64",
+      "path": "1-lts/libffi/3.5.2/libffi-3.5.2-x64.txpk.tar.bz2",
+      "sha256": "c8821aa5e3e0dfd7e7beb635b87217ac02b66b6547a62067c0f9d087efb22530",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libfontenc",
+      "version": "1.1.9",
+      "arch": "x64",
+      "path": "1-lts/libfontenc/1.1.9/libfontenc-1.1.9-x64.txpk.tar.bz2",
+      "sha256": "ca3ff6e4aea0b91429df4660cb9c91316c4f5d561fc140fc365c7d108ab35f77",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libidn2",
+      "version": "2.3.8",
+      "arch": "x64",
+      "path": "1-lts/libidn2/2.3.8/libidn2-2.3.8-x64.txpk.tar.bz2",
+      "sha256": "00cefaf298a2c5e07dba9c8ad5b2cbca825fb3342ad3e52f0cdd81c818ad1d69",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libinput",
+      "version": "1.31.0",
+      "arch": "x64",
+      "path": "1-lts/libinput/1.31.0/libinput-1.31.0-x64.txpk.tar.bz2",
+      "sha256": "e9dcdc6204aa3f7333d5797c1d37b2c50544ae1f01848aa1d6e5bb6faf2be756",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libjpeg-turbo",
+      "version": "3.1.3",
+      "arch": "x64",
+      "path": "1-lts/libjpeg-turbo/3.1.3/libjpeg-turbo-3.1.3-x64.txpk.tar.bz2",
+      "sha256": "c119b0ea262a8898e68da7d379e74375467eb73b82816ea97be91047cadef700",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libmnl",
+      "version": "1.0.5",
+      "arch": "x64",
+      "path": "1-lts/libmnl/1.0.5/libmnl-1.0.5-x64.txpk.tar.bz2",
+      "sha256": "09d3ffdc65cd9f5dcc88e8d0d42850e30e4f3604c0a5a1a37a7c3788ca2cd336",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libndp",
+      "version": "1.9",
+      "arch": "x64",
+      "path": "1-lts/libndp/1.9/libndp-1.9-x64.txpk.tar.bz2",
+      "sha256": "a87fb19d443703e2a5f149637b3b265363fa54e9d82c2791eede0b2a94c64873",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libnl",
+      "version": "3.12.0",
+      "arch": "x64",
+      "path": "1-lts/libnl/3.12.0/libnl-3.12.0-x64.txpk.tar.bz2",
+      "sha256": "00df4770e21edff1cba6ed4707fe44c1a4e98db5739f8e472b95c616f94d819f",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libpciaccess",
+      "version": "0.18.1",
+      "arch": "x64",
+      "path": "1-lts/libpciaccess/0.18.1/libpciaccess-0.18.1-x64.txpk.tar.bz2",
+      "sha256": "5552ab459a3a6cec4cc4384f08e4c240b87a45a72f35b0f7f6c2872d1d980212",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libpng",
+      "version": "1.6.55",
+      "arch": "x64",
+      "path": "1-lts/libpng/1.6.55/libpng-1.6.55-x64.txpk.tar.bz2",
+      "sha256": "71104fc6439ad9d39821b8b68d2175c9cdb40fa62b1f2db57d28cbdbbe80b539",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libpsl",
+      "version": "0.21.5",
+      "arch": "x64",
+      "path": "1-lts/libpsl/0.21.5/libpsl-0.21.5-x64.txpk.tar.bz2",
+      "sha256": "d23b13c8cdbc0fff8177cb4f681000cf31b5184e6252d6d731f27687c3d05d68",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libpwquality",
+      "version": "1.4.5",
+      "arch": "x64",
+      "path": "1-lts/libpwquality/1.4.5/libpwquality-1.4.5-x64.txpk.tar.bz2",
+      "sha256": "b9e427c2704bc889a34c390f334eeb8c4302d155bfc8bc7e6811f4c53e97e837",
+      "roots": [
+        "live"
+      ]
+    },
+    {
+      "name": "libssh2",
+      "version": "1.11.1",
+      "arch": "x64",
+      "path": "1-lts/libssh2/1.11.1/libssh2-1.11.1-x64.txpk.tar.bz2",
+      "sha256": "ba865c86441fea93f97d843ed91dc39815f8a092390909ad5d3783f1c5b073a5",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libtasn1",
+      "version": "4.21.0",
+      "arch": "x64",
+      "path": "1-lts/libtasn1/4.21.0/libtasn1-4.21.0-x64.txpk.tar.bz2",
+      "sha256": "70370df02e822142d8fdb2a92937f9aac23e155ad631d3921f3666b5aa43d14a",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libtirpc",
+      "version": "1.3.7",
+      "arch": "x64",
+      "path": "1-lts/libtirpc/1.3.7/libtirpc-1.3.7-x64.txpk.tar.bz2",
+      "sha256": "da063a4e208ea64ffbc69cb7ab3c4d016291b8ce924b8fd384ff6b5046c70507",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libtool",
+      "version": "2.5.4",
+      "arch": "x64",
+      "path": "1-lts/libtool/2.5.4/libtool-2.5.4-x64.txpk.tar.bz2",
+      "sha256": "c39bf15c8ad96977bf39f9208921f337d370e13927e7dc4e93ace8b293709657",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libunistring",
+      "version": "1.4.1",
+      "arch": "x64",
+      "path": "1-lts/libunistring/1.4.1/libunistring-1.4.1-x64.txpk.tar.bz2",
+      "sha256": "5df7f77ff2e77a0b6540b5b3297b92f98e4022e20e3101df649deb02c3846ebe",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "liburcu",
+      "version": "0.15.6",
+      "arch": "x64",
+      "path": "1-lts/liburcu/0.15.6/liburcu-0.15.6-x64.txpk.tar.bz2",
+      "sha256": "c30214a95c5d361988ab6326ce2cf49444e09b5473d8565965d0442a5182a172",
+      "roots": [
+        "live"
+      ]
+    },
+    {
+      "name": "libusb",
+      "version": "1.0.29",
+      "arch": "x64",
+      "path": "1-lts/libusb/1.0.29/libusb-1.0.29-x64.txpk.tar.bz2",
+      "sha256": "0191f23588af44ee9e456fb8991898af1c6ddf93d4e5821d9ce578d1436eb627",
+      "roots": [
+        "live"
+      ]
+    },
+    {
+      "name": "libuv",
+      "version": "1.51.0",
+      "arch": "x64",
+      "path": "1-lts/libuv/1.51.0/libuv-1.51.0-x64.txpk.tar.bz2",
+      "sha256": "1faf8696260c0533531cd757ce7d6eebcd094b3c4e9c55e9b604bee8a9378513",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libxcb",
+      "version": "1.17.0",
+      "arch": "x64",
+      "path": "1-lts/libxcb/1.17.0/libxcb-1.17.0-x64.txpk.tar.bz2",
+      "sha256": "81a32a574b2524afb1b22f593178cd4e810faabbf608a88c1d82774875b12c5e",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libxcrypt",
+      "version": "4.5.2",
+      "arch": "x64",
+      "path": "1-lts/libxcrypt/4.5.2/libxcrypt-4.5.2-x64.txpk.tar.bz2",
+      "sha256": "7460b6ab19b0358ec9cb5d1a664e303dcaf8eefefef2b8eb6d8f592b6e5c9852",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libxcvt",
+      "version": "0.1.3",
+      "arch": "x64",
+      "path": "1-lts/libxcvt/0.1.3/libxcvt-0.1.3-x64.txpk.tar.bz2",
+      "sha256": "2cbdbca8d9e392f764c61d113a71eb72d3627f76cbe7c00559320cf2e7b1d636",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libxkbcommon",
+      "version": "1.13.1",
+      "arch": "x64",
+      "path": "1-lts/libxkbcommon/1.13.1/libxkbcommon-1.13.1-x64.txpk.tar.bz2",
+      "sha256": "f1094de743cfb9bce8921d9a058153d5d24628cfec7d0a9a75b2269104d2755c",
+      "roots": [
+        "live"
+      ]
+    },
+    {
+      "name": "libxkbfile",
+      "version": "1.2.0",
+      "arch": "x64",
+      "path": "1-lts/libxkbfile/1.2.0/libxkbfile-1.2.0-x64.txpk.tar.bz2",
+      "sha256": "0d25d5d784e6101928b74e12d4acdaa26575150bcdc3a77ad68cc6510bdb9a5c",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libxml2",
+      "version": "2.15.1",
+      "arch": "x64",
+      "path": "1-lts/libxml2/2.15.1/libxml2-2.15.1-x64.txpk.tar.bz2",
+      "sha256": "c8b9909d55a651f3091109346ceb18c6c0c2a4816688c1a81cc1ad33d86a2540",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libxshmfence",
+      "version": "1.3.3",
+      "arch": "x64",
+      "path": "1-lts/libxshmfence/1.3.3/libxshmfence-1.3.3-x64.txpk.tar.bz2",
+      "sha256": "f80b3d31bd74bc1737ad20f1025015a67c06aa51847807d8e2d72090807d0970",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "libxslt",
+      "version": "1.1.45",
+      "arch": "x64",
+      "path": "1-lts/libxslt/1.1.45/libxslt-1.1.45-x64.txpk.tar.bz2",
+      "sha256": "c4051182a86dcb08fb5081c48e90e4bca1e509242171b4b1f8a46a9e25069874",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "limine",
+      "version": "11.4.1",
+      "arch": "x64",
+      "path": "1-lts/limine/11.4.1/limine-11.4.1-x64.txpk.tar.bz2",
+      "sha256": "80b4c12bf10408b07bebdf525caff8c4d7c0e12fcc266f431953914e870f276d",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "linux-tuxenix-multilib",
+      "version": "7.0.11.3",
+      "arch": "x64",
+      "path": "1-lts/linux-tuxenix-multilib/7.0.11.3/linux-tuxenix-multilib-7.0.11.3-x64.txpk.tar.bz2",
+      "sha256": "cc6a4f8a687138cb6d8e90372c57b7eb19d08f6ddd6a60125a6ff68f206d4f78",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "llvm",
+      "version": "21.1.8",
+      "arch": "x64",
+      "path": "1-lts/llvm/21.1.8/llvm-21.1.8-x64.txpk.tar.bz2",
+      "sha256": "39e407365013d6800fd8215b2e7e6c1265b072aa8f80910c9dfbf7ead2d6d0c5",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "luit",
+      "version": "20250912",
+      "arch": "x64",
+      "path": "1-lts/luit/20250912/luit-20250912-x64.txpk.tar.bz2",
+      "sha256": "23de444fa6c3e6cb47ae708842ca5a08561101daeca2703dc4cb2e6ba84de61c",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "lvm2",
+      "version": "2.03.38",
+      "arch": "x64",
+      "path": "1-lts/lvm2/2.03.38/lvm2-2.03.38-x64.txpk.tar.bz2",
+      "sha256": "f75a0fdc8864589f2bc2137cd62c939caa0950fbe2801d95fc8e7b8dfd2466b1",
+      "roots": [
+        "live"
+      ]
+    },
+    {
+      "name": "lynx",
+      "version": "2.9.2",
+      "arch": "x64",
+      "path": "1-lts/lynx/2.9.2/lynx-2.9.2-x64.txpk.tar.bz2",
+      "sha256": "ceef2b0d9fd977ca59f9220bdd696137f5f54462d99f1947d4602df7d83d8037",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "lz4",
+      "version": "1.10.0",
+      "arch": "x64",
+      "path": "1-lts/lz4/1.10.0/lz4-1.10.0-x64.txpk.tar.bz2",
+      "sha256": "fcab3cfc27fb2b7158d12f12e9ad0ef10c98fa989cc46a0463330464df5be94c",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "lzo",
+      "version": "2.10",
+      "arch": "x64",
+      "path": "1-lts/lzo/2.10/lzo-2.10-x64.txpk.tar.bz2",
+      "sha256": "7013fb25c1cfb7dd5c5ce913411fbbe30c9553f4fd569e8989bbbc5754b0bfcd",
+      "roots": [
+        "live"
+      ]
+    },
+    {
+      "name": "m4",
+      "version": "1.4.21",
+      "arch": "x64",
+      "path": "1-lts/m4/1.4.21/m4-1.4.21-x64.txpk.tar.bz2",
+      "sha256": "0f4d0e0e025b7522b58f68409f78973ad04d6ba1dc9fa43dfbdfb8a3a6d49b77",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "make",
+      "version": "4.4.1",
+      "arch": "x64",
+      "path": "1-lts/make/4.4.1/make-4.4.1-x64.txpk.tar.bz2",
+      "sha256": "cff286a658ddcbfdf08dd6fb4eb52557d21c491a7bbd884b50bff74695ee1fe1",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "make-ca",
+      "version": "1.16.1",
+      "arch": "x64",
+      "path": "1-lts/make-ca/1.16.1/make-ca-1.16.1-x64.txpk.tar.bz2",
+      "sha256": "855df6169b2ccd111e7a92d5b647bc6a2f0497e7dde6dd314c8d5c43be0ec1d1",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "mako",
+      "version": "1.3.10",
+      "arch": "x64",
+      "path": "1-lts/mako/1.3.10/mako-1.3.10-x64.txpk.tar.bz2",
+      "sha256": "b5d52755a06636975fe8ce63a23128bebd8e608b0f6d026b1e4a668b02d2b89b",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "markupsafe",
+      "version": "3.0.3",
+      "arch": "x64",
+      "path": "1-lts/markupsafe/3.0.3/markupsafe-3.0.3-x64.txpk.tar.bz2",
+      "sha256": "1ce10c93c1442e44193e6b1280757c87b5c50411b3219b163174836ebed9206e",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "mesa",
+      "version": "25.3.5",
+      "arch": "x64",
+      "path": "1-lts/mesa/25.3.5/mesa-25.3.5-x64.txpk.tar.bz2",
+      "sha256": "a05b153d14d0ff862340b35f0bb198bb6150806ed579587de36df55987f90e20",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "meson",
+      "version": "1.10.1",
+      "arch": "x64",
+      "path": "1-lts/meson/1.10.1/meson-1.10.1-x64.txpk.tar.bz2",
+      "sha256": "eb40eba052a9bd66b21edbb5398eb1fccbe13eca6905a0e07e840054c8e4b12e",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "mkfontscale",
+      "version": "1.2.3",
+      "arch": "x64",
+      "path": "1-lts/mkfontscale/1.2.3/mkfontscale-1.2.3-x64.txpk.tar.bz2",
+      "sha256": "f77551dee7a008d801d94fc178371358d5f37993bcc585b7001c9b7a8a426135",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "mpc",
+      "version": "1.3.1",
+      "arch": "x64",
+      "path": "1-lts/mpc/1.3.1/mpc-1.3.1-x64.txpk.tar.bz2",
+      "sha256": "bbae908277ffb668d4928e8829f5e30d3a3c3150d01ca541ecb10e3e61a08c55",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "mpfr",
+      "version": "4.2.2",
+      "arch": "x64",
+      "path": "1-lts/mpfr/4.2.2/mpfr-4.2.2-x64.txpk.tar.bz2",
+      "sha256": "403c98ed214b8837dccb46b943d7640537828e5634de750c6492dd66a7b78be2",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "mtdev",
+      "version": "1.1.7",
+      "arch": "x64",
+      "path": "1-lts/mtdev/1.1.7/mtdev-1.1.7-x64.txpk.tar.bz2",
+      "sha256": "49c2b49087f020fa6ed074cab0a7b3014f0b545b1d00f01e140e933ce2aa1a1a",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "multilib-runtime",
+      "version": "1.0.0",
+      "arch": "x64",
+      "path": "1-lts/multilib-runtime/1.0.0/multilib-runtime-1.0.0-x64.txpk.tar.bz2",
+      "sha256": "3377868247039e0219518ed25bb3a997c82793cc89ac4be9638a5d5e9f08d972",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "multilib-tests",
+      "version": "1.0.5",
+      "arch": "x64",
+      "path": "1-lts/multilib-tests/1.0.5/multilib-tests-1.0.5-x64.txpk.tar.bz2",
+      "sha256": "adab583f3aede2fa66e43a982e81c34ed8623646d2a908c9c1cc13ddc6ed7f7b",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "ncurses",
+      "version": "6.6",
+      "arch": "x64",
+      "path": "1-lts/ncurses/6.6/ncurses-6.6-x64.txpk.tar.bz2",
+      "sha256": "2eabb5dcfd7d58f432d78cbc4d1ebc1c0e90a325f49e829949a37e00af8c74d1",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "nettle",
+      "version": "4.0",
+      "arch": "x64",
+      "path": "1-lts/nettle/4.0/nettle-4.0-x64.txpk.tar.bz2",
+      "sha256": "6bcd2a2effee4b9c804ee940fa92ed0e169fb059682ba40e4a5452294669f9f8",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "network-firmware",
+      "version": "20260519",
+      "arch": "x64",
+      "path": "1-lts/network-firmware/20260519/network-firmware-20260519-x64.txpk.tar.bz2",
+      "sha256": "217e3d6d763dfac44904f5a05f8d14a49e235e4b5bd9c87771691a4a3869f703",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "networkmanager",
+      "version": "1.56.0.3",
+      "arch": "x64",
+      "path": "1-lts/networkmanager/1.56.0.3/networkmanager-1.56.0.3-x64.txpk.tar.bz2",
+      "sha256": "4fa48b42f9e9ea615dfc329d156bd8ee162f8961b59cab93da822103b1acb06e",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "newt",
+      "version": "0.52.25",
+      "arch": "x64",
+      "path": "1-lts/newt/0.52.25/newt-0.52.25-x64.txpk.tar.bz2",
+      "sha256": "6aadf0e8b654022e3c41621e49acdb6779292121151e8b82867279cb69463456",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "nghttp2",
+      "version": "1.66.0",
+      "arch": "x64",
+      "path": "1-lts/nghttp2/1.66.0/nghttp2-1.66.0-x64.txpk.tar.bz2",
+      "sha256": "975c1118bb2718df020ac5653d668ee8418ccc41ab0aedb716ad1da6651bd853",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "ninja",
+      "version": "1.13.2",
+      "arch": "x64",
+      "path": "1-lts/ninja/1.13.2/ninja-1.13.2-x64.txpk.tar.bz2",
+      "sha256": "77cb67934b113ee6410ad62faa0a8a87b4eef82b79b736fdfdf9bfa024fbe3ef",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "nspr",
+      "version": "4.38.2",
+      "arch": "x64",
+      "path": "1-lts/nspr/4.38.2/nspr-4.38.2-x64.txpk.tar.bz2",
+      "sha256": "998fecbf307d635b3669e485a84a09980bf062692c250356772d562c48281382",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "nss",
+      "version": "3.120.1.2",
+      "arch": "x64",
+      "path": "1-lts/nss/3.120.1.2/nss-3.120.1.2-x64.txpk.tar.bz2",
+      "sha256": "0b6353db11bf34b83741308aa2b5f8b62111f484726847a35f3e7a233abc13e0",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "nvidia-gpu-firmware",
+      "version": "20260519",
+      "arch": "x64",
+      "path": "1-lts/nvidia-gpu-firmware/20260519/nvidia-gpu-firmware-20260519-x64.txpk.tar.bz2",
+      "sha256": "f736230977268202d070b5350fb40255aec62ea5a5fd74ef39d2e35ec536c723",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "nvidia-graphics",
+      "version": "1.0.0",
+      "arch": "x64",
+      "path": "1-lts/nvidia-graphics/1.0.0/nvidia-graphics-1.0.0-x64.txpk.tar.bz2",
+      "sha256": "4417b459679601964d3a7272a2c0631e4be5bfc35a19a7f987203cb8b640baae",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "openssl",
+      "version": "3.6.1",
+      "arch": "x64",
+      "path": "1-lts/openssl/3.6.1/openssl-3.6.1-x64.txpk.tar.bz2",
+      "sha256": "e302d628178206a40dc557a98c6c5c47e8ff71497f4b4be86b30fd2065720bf6",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "p11-kit",
+      "version": "0.26.2",
+      "arch": "x64",
+      "path": "1-lts/p11-kit/0.26.2/p11-kit-0.26.2-x64.txpk.tar.bz2",
+      "sha256": "345a0df497019a0e47d2314dcad676727f09d33af3f98ceebe191878c9a5d8dc",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "packaging",
+      "version": "26.0",
+      "arch": "x64",
+      "path": "1-lts/packaging/26.0/packaging-26.0-x64.txpk.tar.bz2",
+      "sha256": "19b937a4cd6e2b90127578388064a19d1c3e7d7c746551b092ead7aadd15a1ee",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "parted",
+      "version": "3.6",
+      "arch": "x64",
+      "path": "1-lts/parted/3.6/parted-3.6-x64.txpk.tar.bz2",
+      "sha256": "11e99236f129eb16e8bfe695f3d4b0f6efffbfeada46d4d85a6b7904d8a73374",
+      "roots": [
+        "live"
+      ]
+    },
+    {
+      "name": "patch",
+      "version": "2.8",
+      "arch": "x64",
+      "path": "1-lts/patch/2.8/patch-2.8-x64.txpk.tar.bz2",
+      "sha256": "9854a8dd5cdca852b25190e7014595bac5e5fec41856fcd122e90b82c59d9b93",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "pcre2",
+      "version": "10.47",
+      "arch": "x64",
+      "path": "1-lts/pcre2/10.47/pcre2-10.47-x64.txpk.tar.bz2",
+      "sha256": "fd86a3fe3d612aa1aa62843dfc20a978825080661222adc545910e7be118391c",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "perl",
+      "version": "5.42.0",
+      "arch": "x64",
+      "path": "1-lts/perl/5.42.0/perl-5.42.0-x64.txpk.tar.bz2",
+      "sha256": "a4e6f9995af78cdb7c937040f68a39292aacee79e9e51b63ac4ab6e582ea6e60",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "pixman",
+      "version": "0.46.4",
+      "arch": "x64",
+      "path": "1-lts/pixman/0.46.4/pixman-0.46.4-x64.txpk.tar.bz2",
+      "sha256": "bc511fd963ca8aad1afd66b85a685631422d06e9b97cec2464df4393ea20ff77",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "pkgconf",
+      "version": "2.5.1",
+      "arch": "x64",
+      "path": "1-lts/pkgconf/2.5.1/pkgconf-2.5.1-x64.txpk.tar.bz2",
+      "sha256": "b04fbf9bb38b24901edf5b88f7ff1b27e7533e759e419d4586857b0495521f50",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "polkit",
+      "version": "125.2",
+      "arch": "x64",
+      "path": "1-lts/polkit/125.2/polkit-125.2-x64.txpk.tar.bz2",
+      "sha256": "3989b79c23fc63a7715e6c4b6b09c5c96d83efec969545447bf01d97c9c5ad30",
+      "roots": [
+        "live"
+      ]
+    },
+    {
+      "name": "polkit-qt-1",
+      "version": "0.200.0",
+      "arch": "x64",
+      "path": "1-lts/polkit-qt-1/0.200.0/polkit-qt-1-0.200.0-x64.txpk.tar.bz2",
+      "sha256": "22c18b8f59d1a08885f6bc73c89f7cfc80652040c5dd76801b2b3ae1264cdca2",
+      "roots": [
+        "live"
+      ]
+    },
+    {
+      "name": "popt",
+      "version": "1.19",
+      "arch": "x64",
+      "path": "1-lts/popt/1.19/popt-1.19-x64.txpk.tar.bz2",
+      "sha256": "4a5e61be3441dcb31a3d0192cf7fa923077fdb43f5cb7c753c470e42aed167e4",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "procps-ng",
+      "version": "4.0.6",
+      "arch": "x64",
+      "path": "1-lts/procps-ng/4.0.6/procps-ng-4.0.6-x64.txpk.tar.bz2",
+      "sha256": "13da5d72a0e639c384bd1272d90b779197808c72ce519329b38228f5187941ff",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "python",
+      "version": "3.14.3",
+      "arch": "x64",
+      "path": "1-lts/python/3.14.3/python-3.14.3-x64.txpk.tar.bz2",
+      "sha256": "6058c1f1b0d15b55816f25f3911916af3f4c3570e2ce9b6c98c9d81155af43ed",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "pyyaml",
+      "version": "6.0.3",
+      "arch": "x64",
+      "path": "1-lts/pyyaml/6.0.3/pyyaml-6.0.3-x64.txpk.tar.bz2",
+      "sha256": "0d6a0be4f18bd23ec2031ac87de4094d6e0f65de5eb8e1fbaf608bcf792c32ae",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "qtbase",
+      "version": "6.9.1",
+      "arch": "x64",
+      "path": "1-lts/qtbase/6.9.1/qtbase-6.9.1-x64.txpk.tar.bz2",
+      "sha256": "9bccbc74f037e70c58e1718d64c28eecf8db761468ecd477d6b099c277543b02",
+      "roots": [
+        "live"
+      ]
+    },
+    {
+      "name": "qtdeclarative",
+      "version": "6.9.1",
+      "arch": "x64",
+      "path": "1-lts/qtdeclarative/6.9.1/qtdeclarative-6.9.1-x64.txpk.tar.bz2",
+      "sha256": "857220b4cb1eee7b57b41a286526529aaa3b3a100172fed439affe5882591d59",
+      "roots": [
+        "live"
+      ]
+    },
+    {
+      "name": "qtshadertools",
+      "version": "6.9.1",
+      "arch": "x64",
+      "path": "1-lts/qtshadertools/6.9.1/qtshadertools-6.9.1-x64.txpk.tar.bz2",
+      "sha256": "182a83f42f335e9a14f263c90e0930c6aaac4c9cc438408d5599b9043daac401",
+      "roots": [
+        "live"
+      ]
+    },
+    {
+      "name": "qtsvg",
+      "version": "6.9.1",
+      "arch": "x64",
+      "path": "1-lts/qtsvg/6.9.1/qtsvg-6.9.1-x64.txpk.tar.bz2",
+      "sha256": "75ba77fe4721da6fc5200a7f569336f1f18352e2dd92be33ecf5dfb0bc00c16f",
+      "roots": [
+        "live"
+      ]
+    },
+    {
+      "name": "qttools",
+      "version": "6.9.1",
+      "arch": "x64",
+      "path": "1-lts/qttools/6.9.1/qttools-6.9.1-x64.txpk.tar.bz2",
+      "sha256": "db8cd44a760c5d98c01369efae23988b6ad6477192c1c59835c047bf9981573c",
+      "roots": [
+        "live"
+      ]
+    },
+    {
+      "name": "readline",
+      "version": "8.3",
+      "arch": "x64",
+      "path": "1-lts/readline/8.3/readline-8.3-x64.txpk.tar.bz2",
+      "sha256": "8ee96475d41866f8ab91fe653c166b7b8c5ef49670c04663b12eeebe7d8009e7",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "resolv-conf",
+      "version": "1",
+      "arch": "x64",
+      "path": "1-lts/resolv-conf/1/resolv-conf-1-x64.txpk.tar.bz2",
+      "sha256": "ffee4a6c3dd2467822b5dbb478dc43124eeb34d5a13114d8bbd1296c9aed016a",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "rsync",
+      "version": "3.4.1",
+      "arch": "x64",
+      "path": "1-lts/rsync/3.4.1/rsync-3.4.1-x64.txpk.tar.bz2",
+      "sha256": "7724ed3e47d2e5977707333d11fd3e92a7edb222a6df1be336a2a82ab0acd83e",
+      "roots": [
+        "live"
+      ]
+    },
+    {
+      "name": "rust-bindgen",
+      "version": "0.72.1",
+      "arch": "x64",
+      "path": "1-lts/rust-bindgen/0.72.1/rust-bindgen-0.72.1-x64.txpk.tar.bz2",
+      "sha256": "0b875b2e8aa0acdd36f9a715fc4883514d73021f4b34307ce3fe0b7ca8cf1e85",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "rustc",
+      "version": "1.93.1",
+      "arch": "x64",
+      "path": "1-lts/rustc/1.93.1/rustc-1.93.1-x64.txpk.tar.bz2",
+      "sha256": "ccef9630cc41fd01e87496a9eadde068c04d9445a0cd798da8e5005dd395a24a",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "sed",
+      "version": "4.9",
+      "arch": "x64",
+      "path": "1-lts/sed/4.9/sed-4.9-x64.txpk.tar.bz2",
+      "sha256": "ed8af7a5fbd0b6392dace5c60fab7702a59a99ede0b48ede5df16efdbcb9caa5",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "setuptools",
+      "version": "82.0.0",
+      "arch": "x64",
+      "path": "1-lts/setuptools/82.0.0/setuptools-82.0.0-x64.txpk.tar.bz2",
+      "sha256": "6f73926befc1ab6d028d455e830dd0101deef4d4ce0992f8ba3828ebf43160fe",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "shadow",
+      "version": "4.19.3.1",
+      "arch": "x64",
+      "path": "1-lts/shadow/4.19.3.1/shadow-4.19.3.1-x64.txpk.tar.bz2",
+      "sha256": "2a1d8054156ecab2905808a4e3bce1b331fc26a3e5c578667ee2604f35e11d5d",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "slang",
+      "version": "2.3.3",
+      "arch": "x64",
+      "path": "1-lts/slang/2.3.3/slang-2.3.3-x64.txpk.tar.bz2",
+      "sha256": "9dda728fb126a1eb46fa42a65203d4b8f742b0559ce9a75188e325604406a8d7",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "smartmontools",
+      "version": "7.5",
+      "arch": "x64",
+      "path": "1-lts/smartmontools/7.5/smartmontools-7.5-x64.txpk.tar.bz2",
+      "sha256": "bc65be7796758f49ef141e0bee9e2a412b4f9bbc810969d27cb7df2507bbf6a9",
+      "roots": [
+        "live"
+      ]
+    },
+    {
+      "name": "spirv-headers",
+      "version": "1.4.341.0",
+      "arch": "x64",
+      "path": "1-lts/spirv-headers/1.4.341.0/spirv-headers-1.4.341.0-x64.txpk.tar.bz2",
+      "sha256": "40a77499a4795eaa2f8eccc1ddef57501ac1872b3d489575ca1e1c82bc2e8f2d",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "spirv-llvm-translator",
+      "version": "21.1.4",
+      "arch": "x64",
+      "path": "1-lts/spirv-llvm-translator/21.1.4/spirv-llvm-translator-21.1.4-x64.txpk.tar.bz2",
+      "sha256": "2213536973a535c4631ce07166d24e11ed15c4715e5b95cfe98b71e9c7ee04b1",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "spirv-tools",
+      "version": "1.4.341.0",
+      "arch": "x64",
+      "path": "1-lts/spirv-tools/1.4.341.0/spirv-tools-1.4.341.0-x64.txpk.tar.bz2",
+      "sha256": "352b430a8ea96cb3d8c0df25da90fd4e7fbbcb4e1d7f527ffa7b4c7b2a6beb05",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "sqlite",
+      "version": "3510200",
+      "arch": "x64",
+      "path": "1-lts/sqlite/3510200/sqlite-3510200-x64.txpk.tar.bz2",
+      "sha256": "99293635550ea93da6c05688c76e33e2cb24619f1fb5d9d1dcfa57d6e6256fc1",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "sqlitecpp",
+      "version": "3.3.3",
+      "arch": "x64",
+      "path": "1-lts/sqlitecpp/3.3.3/sqlitecpp-3.3.3-x64.txpk.tar.bz2",
+      "sha256": "ff5cbf6267628380659db23f5f05f88112cf2561c8965cef21853082e732d6f8",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "sudo",
+      "version": "1.9.17.2.1",
+      "arch": "x64",
+      "path": "1-lts/sudo/1.9.17.2.1/sudo-1.9.17.2.1-x64.txpk.tar.bz2",
+      "sha256": "ef5544c84e020135a2fb90cbcfb9a7ccc2c98641aee892629470dff90b61c1d1",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "systemd-compat",
+      "version": "259.1.1",
+      "arch": "x64",
+      "path": "1-lts/systemd-compat/259.1.1/systemd-compat-259.1.1-x64.txpk.tar.bz2",
+      "sha256": "21925d1e9935cc61a681a7fbd19f19f36148950b63179a6ed7462df8c0b3d22c",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "tar",
+      "version": "1.35",
+      "arch": "x64",
+      "path": "1-lts/tar/1.35/tar-1.35-x64.txpk.tar.bz2",
+      "sha256": "f7221a48034b0e3d623e5a1dd0103982059335a594ed83f05e6cdb86e9dc2e30",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "texinfo",
+      "version": "7.2",
+      "arch": "x64",
+      "path": "1-lts/texinfo/7.2/texinfo-7.2-x64.txpk.tar.bz2",
+      "sha256": "4aefef203ffb5291722d0ed3ee4217d1963d271672896a45cdc4d604732b264d",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "tuxenix-dinit-services",
+      "version": "0.1.13",
+      "arch": "x64",
+      "path": "1-lts/tuxenix-dinit-services/0.1.13/tuxenix-dinit-services-0.1.13-x64.txpk.tar.bz2",
+      "sha256": "1464e2b73581544548ce57de44514e7ab757a247cdfcf2ca534e0e44b346d405",
+      "roots": [
+        "target"
+      ]
+    },
+    {
+      "name": "twm",
+      "version": "1.0.13.1",
+      "arch": "x64",
+      "path": "1-lts/twm/1.0.13.1/twm-1.0.13.1-x64.txpk.tar.bz2",
+      "sha256": "6c5a4be6adc92182885ca30bf672198dd5d8387d26eed67c24e6fee4d2f1aefb",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "txpk",
+      "version": "0.0.7",
+      "arch": "x64",
+      "path": "1-lts/txpk/0.0.7/txpk-0.0.7-x64.txpk.tar.bz2",
+      "sha256": "39ff97f41764e84eac3eeb2860e34b72ae16f4a7274fdc70947683f7b716f6b6",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.5",
+      "arch": "x64",
+      "path": "1-lts/tzdata/2026.5/tzdata-2026.5-x64.txpk.tar.bz2",
+      "sha256": "729da00ad38ba46379825025ce0494481f128fa01870693b00ffa00e4ee3d56c",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "util-linux",
+      "version": "2.41.3",
+      "arch": "x64",
+      "path": "1-lts/util-linux/2.41.3/util-linux-2.41.3-x64.txpk.tar.bz2",
+      "sha256": "e190c05d02e5df0e49883a9018afa81b1fd7b8fd58c2fadc842349a1062f8a35",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "util-macros",
+      "version": "1.20.2",
+      "arch": "x64",
+      "path": "1-lts/util-macros/1.20.2/util-macros-1.20.2-x64.txpk.tar.bz2",
+      "sha256": "c7e18bb672c1b38f33a843f8a9cd5d6b639b625a5ad473295caa1c7abc6cdade",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "vulkan-headers",
+      "version": "1.4.341.0",
+      "arch": "x64",
+      "path": "1-lts/vulkan-headers/1.4.341.0/vulkan-headers-1.4.341.0-x64.txpk.tar.bz2",
+      "sha256": "2b7a187870747fc01c9a2393a2b84272c9087cdca42454033d02dc7b19080211",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "vulkan-loader",
+      "version": "1.4.341.0",
+      "arch": "x64",
+      "path": "1-lts/vulkan-loader/1.4.341.0/vulkan-loader-1.4.341.0-x64.txpk.tar.bz2",
+      "sha256": "0dc51b99d3987f302c6b33b510297cbd471f264d4c047b19f423bf287115d029",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "wheel",
+      "version": "0.46.3",
+      "arch": "x64",
+      "path": "1-lts/wheel/0.46.3/wheel-0.46.3-x64.txpk.tar.bz2",
+      "sha256": "56df1c6c194b77205dadb42b51dbf2c89743f8f55f597670618fb7901f52555b",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "which",
+      "version": "2.23",
+      "arch": "x64",
+      "path": "1-lts/which/2.23/which-2.23-x64.txpk.tar.bz2",
+      "sha256": "fdbd62353fdd901fe9e7251a79d541da1d4428be93a93794c52be838f4e88e40",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "wireless-regdb",
+      "version": "20260530",
+      "arch": "x64",
+      "path": "1-lts/wireless-regdb/20260530/wireless-regdb-20260530-x64.txpk.tar.bz2",
+      "sha256": "003ace15180eb8684e86ae42a5e6c6a80ec1132473aceed7588cd14bd4846dc3",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "wpa_supplicant",
+      "version": "2.11",
+      "arch": "x64",
+      "path": "1-lts/wpa_supplicant/2.11/wpa_supplicant-2.11-x64.txpk.tar.bz2",
+      "sha256": "f8a75f11f84a02607a441139d3bab7cb71a491337b7133d00aeaca1e44416cdb",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "xauth",
+      "version": "1.1.5",
+      "arch": "x64",
+      "path": "1-lts/xauth/1.1.5/xauth-1.1.5-x64.txpk.tar.bz2",
+      "sha256": "e49226ece996f50a83e8e3023ef8a1999e242d30664115540702f4c5dc6e0252",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "xbitmaps",
+      "version": "1.1.3",
+      "arch": "x64",
+      "path": "1-lts/xbitmaps/1.1.3/xbitmaps-1.1.3-x64.txpk.tar.bz2",
+      "sha256": "ff2922705389e367652c00993959b396d44de29cbf51a2ace80b388edad827f1",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "xcb-proto",
+      "version": "1.17.0",
+      "arch": "x64",
+      "path": "1-lts/xcb-proto/1.17.0/xcb-proto-1.17.0-x64.txpk.tar.bz2",
+      "sha256": "4d3a2cfc761699836213db228cfb5992a0f580efea9e91828492d0c5291b5abb",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "xcb-util",
+      "version": "0.4.1",
+      "arch": "x64",
+      "path": "1-lts/xcb-util/0.4.1/xcb-util-0.4.1-x64.txpk.tar.bz2",
+      "sha256": "135fb90b459c67536ff50b0dff92d62245075d663d2f950584bf9b9517c48340",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "xcb-util-cursor",
+      "version": "0.1.5",
+      "arch": "x64",
+      "path": "1-lts/xcb-util-cursor/0.1.5/xcb-util-cursor-0.1.5-x64.txpk.tar.bz2",
+      "sha256": "4f8d2d9b84fed32847c97a9504fee426583554082367aea0b99469655d3a926f",
+      "roots": [
+        "live"
+      ]
+    },
+    {
+      "name": "xcb-util-image",
+      "version": "0.4.1",
+      "arch": "x64",
+      "path": "1-lts/xcb-util-image/0.4.1/xcb-util-image-0.4.1-x64.txpk.tar.bz2",
+      "sha256": "c840c06e98f40c98a64b1a14f79c3917695d518eeb9de8bc2e3c8fa154875fdd",
+      "roots": [
+        "live"
+      ]
+    },
+    {
+      "name": "xcb-util-keysyms",
+      "version": "0.4.1",
+      "arch": "x64",
+      "path": "1-lts/xcb-util-keysyms/0.4.1/xcb-util-keysyms-0.4.1-x64.txpk.tar.bz2",
+      "sha256": "6d8e4945e73fb8e45bc2b9c45cfaff4f22db2c62ac5686bdbc400a028ad4c105",
+      "roots": [
+        "live"
+      ]
+    },
+    {
+      "name": "xcb-util-renderutil",
+      "version": "0.3.10",
+      "arch": "x64",
+      "path": "1-lts/xcb-util-renderutil/0.3.10/xcb-util-renderutil-0.3.10-x64.txpk.tar.bz2",
+      "sha256": "7c7ac046bdaaef6c9d353d4e83b8d783423cbe31306e85533fba0166d0c52b56",
+      "roots": [
+        "live"
+      ]
+    },
+    {
+      "name": "xcb-util-wm",
+      "version": "0.4.2",
+      "arch": "x64",
+      "path": "1-lts/xcb-util-wm/0.4.2/xcb-util-wm-0.4.2-x64.txpk.tar.bz2",
+      "sha256": "578822bea8cbfd9aa3826cf2ed229c9916f3fb9cf703c81503306876d6622f79",
+      "roots": [
+        "live"
+      ]
+    },
+    {
+      "name": "xclock",
+      "version": "1.1.1",
+      "arch": "x64",
+      "path": "1-lts/xclock/1.1.1/xclock-1.1.1-x64.txpk.tar.bz2",
+      "sha256": "f0624251ee4b392670b84ede7d3c8a2e9adc23d45308d671adcc04234a4df61b",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "xcursor-themes",
+      "version": "1.0.7",
+      "arch": "x64",
+      "path": "1-lts/xcursor-themes/1.0.7/xcursor-themes-1.0.7-x64.txpk.tar.bz2",
+      "sha256": "4008f26be1585003cb929e602bd3bc9ae3d7e347834d7a0bf6350f7eb026a589",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "xcursorgen",
+      "version": "1.0.9",
+      "arch": "x64",
+      "path": "1-lts/xcursorgen/1.0.9/xcursorgen-1.0.9-x64.txpk.tar.bz2",
+      "sha256": "3891116a4e55d14e1c7e2233b65c1ef014a426d46e4b4000696ad03d74360cb6",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "xdg-utils",
+      "version": "1.2.1",
+      "arch": "x64",
+      "path": "1-lts/xdg-utils/1.2.1/xdg-utils-1.2.1-x64.txpk.tar.bz2",
+      "sha256": "588502e1e0fae7c7fb950f32ecd57b3482dcb6818a032af309699bc59c8f153a",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "xdpyinfo",
+      "version": "1.4.0",
+      "arch": "x64",
+      "path": "1-lts/xdpyinfo/1.4.0/xdpyinfo-1.4.0-x64.txpk.tar.bz2",
+      "sha256": "5031866086094bc483be57ae9da9044a8f55ded7c978752f64347ef9017a4f92",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "xf86-input-libinput",
+      "version": "25.0.1",
+      "arch": "x64",
+      "path": "1-lts/xf86-input-libinput/25.0.1/xf86-input-libinput-25.0.1-x64.txpk.tar.bz2",
+      "sha256": "4186f6454a73923d31df6c4c473962d94a8c9f7883aae589e3f6c1d151ef9cb4",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "xfsprogs",
+      "version": "6.18.0",
+      "arch": "x64",
+      "path": "1-lts/xfsprogs/6.18.0/xfsprogs-6.18.0-x64.txpk.tar.bz2",
+      "sha256": "c726be3c8ff8e01a87a46bacb8ae33b981be2030db610e24ea3356d6f8b31405",
+      "roots": [
+        "live"
+      ]
+    },
+    {
+      "name": "xinit",
+      "version": "1.4.4.4",
+      "arch": "x64",
+      "path": "1-lts/xinit/1.4.4.4/xinit-1.4.4.4-x64.txpk.tar.bz2",
+      "sha256": "e36596e90a8a942f80a00a6f901fb3f873b62af3905aba4509b18de95e1001ac",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "xinput",
+      "version": "1.6.4",
+      "arch": "x64",
+      "path": "1-lts/xinput/1.6.4/xinput-1.6.4-x64.txpk.tar.bz2",
+      "sha256": "5f10852c2243b24cd7ebabe99867e0e1177542f4711d1d3b543ebba9316298c8",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "xkbcomp",
+      "version": "1.5.0",
+      "arch": "x64",
+      "path": "1-lts/xkbcomp/1.5.0/xkbcomp-1.5.0-x64.txpk.tar.bz2",
+      "sha256": "ff4581cd533307758efccdc0a8587439ef294f9033bab1a627ac83e0f76ef7f5",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "xkeyboard-config",
+      "version": "2.46",
+      "arch": "x64",
+      "path": "1-lts/xkeyboard-config/2.46/xkeyboard-config-2.46-x64.txpk.tar.bz2",
+      "sha256": "2197b9317e6580c125851192597bf69ea47cb755f4e64b1e33e4a60085e0d397",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "xmessage",
+      "version": "1.0.7",
+      "arch": "x64",
+      "path": "1-lts/xmessage/1.0.7/xmessage-1.0.7-x64.txpk.tar.bz2",
+      "sha256": "e55c7a21ff066215c4ff956a8be791ce423ef7081f24c6eeba68a0c179f93e5f",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "xmlto",
+      "version": "0.0.29",
+      "arch": "x64",
+      "path": "1-lts/xmlto/0.0.29/xmlto-0.0.29-x64.txpk.tar.bz2",
+      "sha256": "e824f48faaa3bef1228e851392b25d1f0dee717d087da0035d63751d702b73e5",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "xorg-server",
+      "version": "25.1.9",
+      "arch": "x64",
+      "path": "1-lts/xorg-server/25.1.9/xorg-server-25.1.9-x64.txpk.tar.bz2",
+      "sha256": "064bbe5b32b6b5b935d3831cd5d702b4118d7adafcebb67fa5df15badc4328be",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "xorgproto",
+      "version": "2025.1",
+      "arch": "x64",
+      "path": "1-lts/xorgproto/2025.1/xorgproto-2025.1-x64.txpk.tar.bz2",
+      "sha256": "aa323a3a6e3485edc55740487ae2ddd7a01450cc602ff712018d124bc4b276df",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "xrandr",
+      "version": "1.5.3",
+      "arch": "x64",
+      "path": "1-lts/xrandr/1.5.3/xrandr-1.5.3-x64.txpk.tar.bz2",
+      "sha256": "9a08a35fb96f3b557bc2a1880cf89526fb80e22db0f1675cd71c2bb58ce7ccd7",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "xterm",
+      "version": "407",
+      "arch": "x64",
+      "path": "1-lts/xterm/407/xterm-407-x64.txpk.tar.bz2",
+      "sha256": "a744bf82543ce4d77818c775689e7c0c900ec2328e35882f6814719a9718082f",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "xtrans",
+      "version": "1.6.0",
+      "arch": "x64",
+      "path": "1-lts/xtrans/1.6.0/xtrans-1.6.0-x64.txpk.tar.bz2",
+      "sha256": "20a9d82574070cfaae9264f7fadb6308348057261062ca44c3def7737321a661",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "xwud",
+      "version": "1.0.7",
+      "arch": "x64",
+      "path": "1-lts/xwud/1.0.7/xwud-1.0.7-x64.txpk.tar.bz2",
+      "sha256": "5672250739753f4c9eacda830823c675b59fb05271977eaac9915cbbb76e9b4c",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "xz",
+      "version": "5.8.2",
+      "arch": "x64",
+      "path": "1-lts/xz/5.8.2/xz-5.8.2-x64.txpk.tar.bz2",
+      "sha256": "9e48232b7cdc571f214d24b23838cee5ee8a320c86ffef23ec94e922ab7f84cc",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "yaml-cpp",
+      "version": "0.8.0",
+      "arch": "x64",
+      "path": "1-lts/yaml-cpp/0.8.0/yaml-cpp-0.8.0-x64.txpk.tar.bz2",
+      "sha256": "7c2623b8d984994a49a21439d9c7239a7280a8e5a11ca4b98e6be31535fd8d69",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "zlib",
+      "version": "1.3.2",
+      "arch": "x64",
+      "path": "1-lts/zlib/1.3.2/zlib-1.3.2-x64.txpk.tar.bz2",
+      "sha256": "1c1d29345b9c6a879bde7a91d82b19ed09e79cd262ed956bef5485e12b0eb3d0",
+      "roots": [
+        "target",
+        "live"
+      ]
+    },
+    {
+      "name": "zstd",
+      "version": "1.5.7",
+      "arch": "x64",
+      "path": "1-lts/zstd/1.5.7/zstd-1.5.7-x64.txpk.tar.bz2",
+      "sha256": "e7bc7ccddb31ce23f438421b212a3327b80536f21946e4e914774934b103b56f",
+      "roots": [
+        "target",
+        "live"
+      ]
+    }
+  ]
+}

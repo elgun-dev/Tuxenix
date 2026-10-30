@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Installation guide
+    url: https://tuxenix.org/install.html
+    about: Download verification, partitioning and setup instructions.
+  - name: Release and test status
+    url: https://github.com/elgun-dev/Tuxenix/blob/main/docs/status.md
+    about: Published versions, test coverage and pending source work.

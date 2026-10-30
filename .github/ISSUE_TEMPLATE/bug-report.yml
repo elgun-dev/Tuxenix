@@ -1,0 +1,49 @@
+name: Bug report
+description: Report a reproducible installation, package or desktop failure.
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Image and package versions
+      description: Give the ISO filename or date and any relevant updates installed afterward.
+      placeholder: October 22, 2026 ISO; power-utils 1.0.0 installed afterward
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Where does it happen?
+      options:
+        - Live system
+        - Installer
+        - Installed system
+        - Build environment
+        - Documentation or download
+    validations:
+      required: true
+  - type: textarea
+    id: machine
+    attributes:
+      label: Machine or VM
+      description: Include model, RAM, firmware mode, and relevant GPU/network/storage devices. For a VM, name its virtual devices.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps and actual result
+      description: Include the last successful step, the exact failing command or action, and whether it happens again.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Error output or logs
+      description: Include the full error when possible. Remove passwords, tokens and personal network details. Do not attach Wi-Fi credential files.
+      render: text

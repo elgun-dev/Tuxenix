@@ -1,0 +1,47 @@
+{
+  "recorded_at": "2026-10-29",
+  "iso": {
+    "release_date": "2026-10-22",
+    "url": "https://tuxenix.org/iso/tuxenix-dinit-desktop-2026-10-22.iso",
+    "bytes": 1313968128,
+    "sha256": "8ae76d8d70ffc346c675ba66cbea269b6d2bb9f470c9f94b43e0a5cd9286fc9e",
+    "package_manifest": "2026-10-22-packages.json",
+    "package_manifest_sha256": "0652a778316e731d99d7863c5a81e6add9ded8fefed72022303b4dcd5d8619c0",
+    "publication_source_refs": {
+      "installer": "a3399119c6b72e51c2a6aeb35529521e931f1339",
+      "packages": "72ef76c35d05f2d68958f188e0a4d1326ee0325d"
+    }
+  },
+  "package_update": {
+    "release_date": "2026-10-29",
+    "name": "power-utils",
+    "version": "1.0.0",
+    "url": "https://tuxenix.org/1-lts/power-utils/1.0.0/power-utils-1.0.0-x64.txpk.tar.bz2",
+    "bytes": 488,
+    "sha256": "213421da3f06320ad54d89ac563849048fbfc9f23e57c780dfd76aa2567aed63",
+    "publication_source_refs": {
+      "packages": "035d9703c990c41bc8615d51f8d26181f0306e5e",
+      "installer": "10d75bf167bdb73a0667978ec9effc33c130d031"
+    }
+  },
+  "repository_at_package_publication": {
+    "package_names": 495,
+    "archives": 549
+  },
+  "pending_integration": {
+    "published": false,
+    "main_merged_at_recording": false,
+    "packages": {
+      "branch": "tuxenix-steam-multilib",
+      "tested_code": "8c6380bee60cb47b0ed61d27f11ce989f506b6ce",
+      "documentation_head": "c4d9d1247fdd5d0a42ccae8a2d8ae0339996159b",
+      "merge_request": "https://gitlab.anysolo.com/opensource/anysolo-linux/pkg-sources/-/merge_requests/4"
+    },
+    "installer": {
+      "branch": "tuxenix-steam-publication",
+      "tested_code": "fed77f0068fae0b0486d08c4fbeacd1ed2193a5c",
+      "documentation_head": "0ebcb59db57bc21bb60ebf57f562ea98b3533304",
+      "merge_request": "https://gitlab.anysolo.com/opensource/anysolo-linux/installer/-/merge_requests/3"
+    }
+  }
+}

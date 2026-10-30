@@ -1,0 +1,8 @@
+type = process
+command = /usr/local/libexec/tuxenix-ram-monitor
+restart = true
+smooth-recovery = true
+restart-delay = 5
+log-type = buffer
+
+depends-on: runtime-setup

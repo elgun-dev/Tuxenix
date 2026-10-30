@@ -17,8 +17,10 @@ major engineering milestones.
 
 Tuxenix is now a publicly downloadable, real-hardware-tested Linux desktop:
 
+- The current public image was built and verified on **July 28, 2026**.
+- **450 installable package names** are listed by the repository.
 - **473 compiled package archives** are available from the public HTTPS
-  repository.
+  repository, including retained versions of some packages.
 - A **2.6 GiB hybrid BIOS/UEFI ISO** boots a live IceWM desktop and launches
   the Calamares installer.
 - Installed systems use **dinit as PID 1**, with systemd-compatible runtime
@@ -46,6 +48,9 @@ Current ISO SHA-256:
 ```text
 f5e3a7953fcb2bbb267af66b5ad65f763938767559239fa15fae6ff23ff1b58c
 ```
+
+The ISO is exactly **2,699,526,144 bytes** and uses the
+`TUXENIX_DINIT` volume label.
 
 The full package catalog and direct archive downloads are available at
 [tuxenix.org/packages.html](https://tuxenix.org/packages.html).
@@ -134,6 +139,14 @@ installation.
 The toolkit provides package linting, dependency graphs, build dashboards,
 root-filesystem generation, ISO creation, public catalog generation, release
 uploading, and QEMU boot helpers.
+
+Release baseline source revisions:
+
+```text
+Installer/tooling: c40fffc9615287b8458b9746a28a4e35e4977d69
+Package sources:   7e56255f80253218cc73166282a5f8feab578043
+Public overview:   33c14c6a1a13fd180c24d84d930fe0b2bc4e2dd8
+```
 
 ## Installation Notes
 

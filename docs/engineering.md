@@ -95,10 +95,45 @@ The optional external XTS/Piglit suite was skipped. The final candidate pair
 was installed in a disposable guest and tested with normal-user desktop,
 keyboard/mouse input, resolution changes, software OpenGL, reboot and shutdown.
 
-**This is tested source awaiting the protected GitLab main merge.** The candidate server is package
+**This fix is included in the new candidate, but is not in the published October 22 image.** The candidate server is package
 25.1.9.1; the published image contains 25.1.9. See the
-[package merge request](https://gitlab.anysolo.com/opensource/anysolo-linux/pkg-sources/-/merge_requests/4)
-and [exact tested revisions](status.md#source-integration).
+[package merge request](https://gitlab.anysolo.com/opensource/anysolo-linux/pkg-sources/-/merge_requests/5)
+and [exact tested revisions](status-2026-10-30.md#source-integration).
+
+## Windows EFI diagnostics must distinguish cosmetic labels from damage
+
+Windows Setup can put SYSTEM in the EFI directory label while the FAT boot
+sector still says NO NAME. The read-only checker reports status 1 for this
+cosmetic mismatch. Rejecting every nonzero status stopped a genuine Windows
+alongside installation before any writes.
+
+Settings 1.5.13 retains a narrowly checked label-only exception: the complete
+known diagnostic and actual boot-sector bytes must agree, with no additional
+warning. Dirty filesystems, corruption and unknown diagnostics remain refused.
+Real FAT-image tests verify acceptance/rejection without changing bytes.
+
+## A blank selected ESP still has other operating systems to discover
+
+An older Tuxenix installation can use the same loader path on another ESP.
+The installer must exclude only its own path on its own ESP. It must also
+inspect registered foreign loaders even when the selected ESP has no EFI
+directory yet. A regression now checks both the first installation and a
+repeat install; checking only the second had hidden the empty-directory case.
+
+## A started process is not necessarily ready for device events
+
+One installed 4Kn VM reached login with the correct video groups but graphics
+devices remained root-only and the udev database was empty. The service graph
+had started the daemon process and sent coldplug events before the daemon
+was ready to receive them. Triggering events after startup restored the
+normal-user desktop, establishing the ordering failure.
+
+Dinit services 0.1.14 waits for a real udev control reply before triggering
+those events. It has a 30-second deadline and fails without sending events
+if readiness never arrives; the existing settle dependency remains. Tests
+cover immediate readiness, delayed readiness, timeout and trigger failure,
+plus an actual paused/resumed-daemon probe. Final image boots check device
+permissions, populated udev records and normal-user desktop startup.
 
 ## What a release claim needs
 

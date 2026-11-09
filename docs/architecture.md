@@ -72,7 +72,7 @@ names `Xorg` and `X` are retained for compatibility with existing consumers.
 
 The October 22 manifest pins XLibre server package 25.1.9 and input driver
 25.0.1. The patched server package 25.1.9.1 is committed on the review branch and included in the October 30
-candidate. Server and driver compatibility must be checked together.
+candidate and the November 9 replacement. Server and driver compatibility must be checked together.
 
 Native libraries live under `/usr/lib`; the i686 runtime lives under
 `/usr/lib32`. This supports software that needs both architectures without
@@ -106,7 +106,7 @@ a new image.
 | Location | Role |
 | --- | --- |
 | [This repository](../README.md) | Public documentation, release evidence summaries and issue reports |
-| [Package sources: `tuxenix-steam-multilib`](https://gitlab.anysolo.com/opensource/anysolo-linux/pkg-sources/-/tree/tuxenix-steam-multilib) | Recipes, source patches, dinit services and desktop packages |
+| [Package sources: `feature/easy-dual-boot-2026-11-05`](https://gitlab.anysolo.com/opensource/anysolo-linux/pkg-sources/-/tree/feature/easy-dual-boot-2026-11-05) | Recipes, source patches, dinit services and desktop packages |
 | [Installer: `tuxenix-steam-publication`](https://gitlab.anysolo.com/opensource/anysolo-linux/installer/-/tree/tuxenix-steam-publication) | Toolkit, image construction, installer configuration and release records |
 | [Package catalog](https://tuxenix.org/packages.html) | Published binary packages |
 | [Release timeline](https://tuxenix.org/releases.html) | Published image and package changes |

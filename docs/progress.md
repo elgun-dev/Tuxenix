@@ -2,7 +2,7 @@
 
 [← Tuxenix](../README.md) · [Current release and tests](status.md) · [Engineering notes](engineering.md)
 
-This is the recorded progression from June 9 through October 30, 2026.
+This is the recorded progression from June 9 through November 9, 2026.
 Dates identify when a milestone was recorded or released. A development ISO,
 a successful VM test and a published image are different milestones; each
 entry keeps that distinction. Historical commands and old installer behavior
@@ -316,7 +316,7 @@ unpublished integration work. A full new-image installation, physical hardware,
 games and graphical power/authentication still need their own qualification.
 
 [Power command release](https://tuxenix.org/releases.html#power-2026-10-29) ·
-[Exact integration revisions and remaining work](status.md#source-integration)
+[Exact integration revisions and remaining work](status-2026-10-30.md#source-integration)
 
 ## October 30 — Easy/Expert installer and combined image
 
@@ -341,8 +341,43 @@ Package and installer work was committed and pushed to the GitLab review
 branches. Protected-main merge access is still needed to complete integration. The
 private GitHub toolkit was synchronized with GitLab; older local edits were
 preserved on archive branches. The ISO remains a local candidate and the public
-download remains October 22. See the [exact current record](status.md#source-integration)
+download remains October 22. See the [exact current record](status-2026-10-30.md#source-integration)
 and [handoff](handoff-2026-10-30.md).
+
+## November 5 — installation in existing unallocated space
+
+Easy mode gained an alongside path: choose an unallocated GPT region, a new
+root size and an existing EFI partition. Existing partitions and EFI files
+are preserved. A prepared plan is revalidated before writes; stale geometry
+or manual changes cannot silently become a different installation. Automatic
+shrinking is outside this workflow.
+
+The local November 5 image passed Linux alongside/reinstall/boot checks,
+4Kn and multiple-ESP coverage, neighboring-disk preservation and refusal
+checks. It was not published; genuine Windows and BitLocker qualification
+was still needed.
+
+## November 9 — genuine Windows testing and release qualification
+
+A genuine Windows 11 Enterprise Evaluation fixture was installed with an
+ESP, MSR, Windows, WinRE and existing unallocated space. An independent TPM2
+fixture was fully encrypted with BitLocker protection on. Tests measured
+whole-partition and foreign-EFI preservation before normal OS startup.
+
+Windows testing exposed a harmless EFI volume-label mismatch that the
+read-only filesystem check treated as fatal. Further Linux testing exposed
+missing menu entries when the selected ESP was initially empty, and a 4Kn
+boot exposed a udev startup race that left graphics devices inaccessible.
+The fixes are settings 1.5.13 and dinit services 0.1.14; focused regressions
+include the first install and delayed daemon readiness.
+
+The combined image passed its own complete matrix: minimum-size and
+1024×768 workflow, empty-drive installation, both Linux choices, genuine
+Windows Easy install and Expert reinstall, BitLocker recovery and protected
+boot after resealing, 4Kn/multiple ESPs, preservation and zero-write refusal
+guards. Earlier-image results remain separate. Protected source merges and
+verified public deployment are still pending in the
+[current status](status.md#november-9-replacement).
 
 ## Evidence and maintenance
 

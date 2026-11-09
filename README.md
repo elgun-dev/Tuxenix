@@ -101,26 +101,34 @@ fixes as well as releases; the dates do not all represent downloadable images.
 | October 19–22 | Added installer networking, partition units, GPT-only creation, automatic EFI flags and readable dialogs. | October 22 ISO published after final automatic-install and disk-only boot checks. |
 | October 26 | Added graphical Wi-Fi/power controls, an installer redesign and a Try/Install chooser. | Source and preview work; not a published replacement ISO. |
 | October 29 | Published `power-utils`; completed XLibre/multilib/dinit integration and repaired the hidden test failures and protocol bug. | Power commands released; integration tests passed and merge requests opened. |
-
 | October 30 | Added Easy/Expert installer modes and rebuilt the image with current desktop utilities and XLibre fixes; pushed source for merge. | Fresh installation, disk-only boot, normal-user desktop and graphical shutdown passed. Candidate ISO remains unpublished. |
+| November 5 | Added Easy-mode installation in existing unallocated space, explicit EFI selection and preserving boot setup. | Linux VM installation, refusal guards and 4Kn/multiple-ESP checks passed; Windows testing remained open. |
+| November 9 | Tested genuine Windows and protected BitLocker, fixed Windows EFI checks, first-install boot entries on other ESPs and udev readiness. | Combined settings 1.5.13/services 0.1.14 image passed the final VM matrix; protected source merges and public deployment remain pending. |
 
 [Read the full progress log: changes, setbacks, tests and release boundaries →](docs/progress.md)
 
 ## Current release and next work
 
-Status recorded **October 30, 2026**:
+Status recorded **November 9, 2026**:
 
 | Work | State |
 | --- | --- |
-| October 22 installer ISO | Published; remains the current image. |
-| `power-utils` 1.0.0 | Published October 29; adds `shutdown` and `reboot` using dinit. |
-| New desktop controls, installer changes and XLibre fixes | Committed and pushed; GitLab main merge pending. Included in the tested October 30 candidate. |
-| Easy/Expert installer | Easy uses a blank drive: 512 MiB FAT32 EFI and remaining usable space for ext4 root. Expert retains full controls. |
+| Public download | October 22 remains published until a replacement passes qualification and public download verification. |
+| Easy-mode alongside installation | Implemented for existing unallocated GPT space; existing partitions are kept and the selected EFI partition is reused without formatting. Automatic shrinking is not implemented. |
+| Windows and BitLocker | Genuine Windows install/reinstall, partition and EFI preservation, both desktops, BitLocker recovery/reseal and protected subsequent boot passed on the exact combined replacement. |
+| Current replacement | Calamares 3.4.2.23, settings 1.5.13, dinit services 0.1.14 and 289 pinned archives. See the exact artifact and test matrix in the status record. |
+| Source and release | Existing [package MR !5](https://gitlab.anysolo.com/opensource/anysolo-linux/pkg-sources/-/merge_requests/5) and [installer MR !3](https://gitlab.anysolo.com/opensource/anysolo-linux/installer/-/merge_requests/3); protected merges and verified publication remain required. |
 
-The combined October 30 image passed a fresh VM installation, boot without
-the ISO and password-authenticated graphical shutdown. Physical graphics
-acceleration, games, real Wi-Fi and suspend still need dated hardware results.
-The candidate has not replaced the public download.
+The current work closes the gap between a prepared partition plan and a
+reliably bootable dual-boot system. Tests compare entire existing partitions
+and EFI files before either old operating system starts, then check both
+boot choices. The latest fixes also make first installation onto a different
+ESP retain the old Tuxenix menu entry and wait for udev before device events.
+
+Next: finish protected source review and website review, publish the ISO
+and packages, and verify the public files over HTTPS. Physical graphics,
+real Wi-Fi, games, suspend, hardware TPM and Secure Boot still need separate
+results. The working laptop is not a disposable test target.
 
 [Release details, test coverage and remaining work →](docs/status.md)
 

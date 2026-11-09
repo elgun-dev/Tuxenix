@@ -6,6 +6,10 @@ These notes describe the **October 22, 2026** image. The
 [full installation guide](https://tuxenix.org/install.html) covers manual
 partitioning and updates to existing installations.
 
+The newer Easy-mode alongside workflow is documented in the
+[November 9 candidate status](status.md#november-9-replacement). Its release
+status and tested scope are separate from these published-image instructions.
+
 ## Prepare
 
 Use an x86_64 machine or VM with UEFI firmware and Secure Boot disabled.

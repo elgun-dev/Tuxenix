@@ -375,9 +375,14 @@ The combined image passed its own complete matrix: minimum-size and
 1024×768 workflow, empty-drive installation, both Linux choices, genuine
 Windows Easy install and Expert reinstall, BitLocker recovery and protected
 boot after resealing, 4Kn/multiple ESPs, preservation and zero-write refusal
-guards. Earlier-image results remain separate. Protected source merges and
-verified public deployment are still pending in the
-[current status](status.md#november-9-replacement).
+guards. Earlier-image results remain separate.
+
+The website status update was then published and HTTPS-verified: a new
+[project status page](https://tuxenix.org/status.html), homepage progress,
+a published-image guide note and pending release notes. No ISO or package
+identity changed; October 22 remains the public download. Protected source
+merges and verified binary deployment are the remaining steps in the
+[canonical current status and handoff](status.md#next-work-and-release-handoff).
 
 ## Evidence and maintenance
 

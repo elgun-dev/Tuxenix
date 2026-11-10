@@ -103,7 +103,7 @@ fixes as well as releases; the dates do not all represent downloadable images.
 | October 29 | Published `power-utils`; completed XLibre/multilib/dinit integration and repaired the hidden test failures and protocol bug. | Power commands released; integration tests passed and merge requests opened. |
 | October 30 | Added Easy/Expert installer modes and rebuilt the image with current desktop utilities and XLibre fixes; pushed source for merge. | Fresh installation, disk-only boot, normal-user desktop and graphical shutdown passed. Candidate ISO remains unpublished. |
 | November 5 | Added Easy-mode installation in existing unallocated space, explicit EFI selection and preserving boot setup. | Linux VM installation, refusal guards and 4Kn/multiple-ESP checks passed; Windows testing remained open. |
-| November 9 | Tested genuine Windows and protected BitLocker, fixed Windows EFI checks, first-install boot entries on other ESPs and udev readiness. | Combined settings 1.5.13/services 0.1.14 image passed the final VM matrix; protected source merges and public deployment remain pending. |
+| November 9 | Tested genuine Windows and protected BitLocker, fixed Windows EFI checks, first-install boot entries on other ESPs and udev readiness. | Combined settings 1.5.13/services 0.1.14 image passed the final VM matrix; website status is published, while protected source merges and binary deployment remain pending. |
 
 [Read the full progress log: changes, setbacks, tests and release boundaries →](docs/progress.md)
 
@@ -113,7 +113,8 @@ Status recorded **November 9, 2026**:
 
 | Work | State |
 | --- | --- |
-| Public download | October 22 remains published until a replacement passes qualification and public download verification. |
+| Public download | October 22 remains published; the qualified November 9 replacement awaits protected source merges and verified binary deployment. |
+| Website | [Current status and test results](https://tuxenix.org/status.html) are published and HTTPS-verified; ISO and package downloads are unchanged. |
 | Easy-mode alongside installation | Implemented for existing unallocated GPT space; existing partitions are kept and the selected EFI partition is reused without formatting. Automatic shrinking is not implemented. |
 | Windows and BitLocker | Genuine Windows install/reinstall, partition and EFI preservation, both desktops, BitLocker recovery/reseal and protected subsequent boot passed on the exact combined replacement. |
 | Current replacement | Calamares 3.4.2.23, settings 1.5.13, dinit services 0.1.14 and 289 pinned archives. See the exact artifact and test matrix in the status record. |
@@ -125,9 +126,11 @@ and EFI files before either old operating system starts, then check both
 boot choices. The latest fixes also make first installation onto a different
 ESP retain the old Tuxenix menu entry and wait for udev before device events.
 
-Next: finish protected source review and website review, publish the ISO
-and packages, and verify the public files over HTTPS. Physical graphics,
-real Wi-Fi, games, suspend, hardware TPM and Secure Boot still need separate
+Next: complete administrator-approved protected source merges, refresh the
+release staging from the current website, publish the ISO and packages, and
+verify the public files over HTTPS. Qualification and website review are complete.
+Physical graphics, real Wi-Fi, games, suspend, hardware TPM and Secure Boot
+still need separate
 results. The working laptop is not a disposable test target.
 
 [Release details, test coverage and remaining work →](docs/status.md)

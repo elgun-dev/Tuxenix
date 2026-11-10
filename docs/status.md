@@ -5,7 +5,12 @@
 Recorded **November 9, 2026**. The current public download is still the
 October 22 ISO. The combined November 9 replacement passed its complete VM qualification.
 Protected source merges and verified deployment are still pending; it is not
-yet a published download.
+yet a published download. The [website status update](https://tuxenix.org/status.html)
+is live and HTTPS-verified. Its homepage, installation-guide note and release
+notes changed without changing any ISO or package download.
+
+This is the canonical current status and release handoff. Dated historical
+records retain the evidence and limitations of their own images.
 
 ## November 9 replacement
 
@@ -96,7 +101,9 @@ The current review requests are [package MR !5](https://gitlab.anysolo.com/opens
 and [installer MR !3](https://gitlab.anysolo.com/opensource/anysolo-linux/installer/-/merge_requests/3).
 The package branch is `feature/easy-dual-boot-2026-11-05`; the installer MR
 uses `tuxenix-steam-publication`. Package main already contains the older
-October 30 review; the new release changes still require protected merges.
+October 30 review; the new release changes still require administrator-approved
+protected merges. The existing requests contain the final source, qualification
+and website records; keep using those requests rather than opening duplicates.
 
 The release procedure requires the tested source to be present in main,
 reviewed package/site staging and complete HTTPS readback of the published
@@ -123,12 +130,29 @@ continues to describe the published image until the new release is verified.
 with `sudo txpk --install power-utils`. Package releases and ISO releases
 have independent dates.
 
-## Next work
+## Next work and release handoff
 
-1. Complete the protected source reviews/merges and the final website review.
-   The complete combined-image test matrix has passed.
-2. Publish the dated ISO and six package versions, retain the previous public
-   release for rollback, and verify every changed public file over HTTPS.
-3. Collect dated physical hardware results for the remaining coverage gaps.
+1. Complete administrator-approved protected source merges for package MR !5
+   and installer MR !3. All required exact-image tests and website review have
+   passed; protected merges are the remaining release gate. Verify that the
+   reviewed source and required runtime commits are in main before deployment.
+2. Capture a fresh public baseline and prepare a new release staging directory.
+   The status-only website publication changed the earlier baseline, so the
+   old full-release upload plan must not be reused. Keep the exact qualified
+   ISO bytes identified above; do not rebuild without requalifying the result.
+3. Before deployment, download the public October 22 ISO into a temporary
+   rollback workspace and verify its size and SHA-256 above. Only the final
+   candidate is retained locally after the requested cleanup; older local ISO
+   files were removed. Publish the dated ISO and six package versions, preserve
+   existing published archives and the previous public ISO, and verify every changed
+   public file over HTTPS before calling the replacement released. Then update
+   this status and the published-image guide. Remove the temporary local
+   rollback copy after verified completion.
+4. Collect dated physical hardware results for the remaining coverage gaps.
 
-[Current handoff](handoff-2026-11-09.md) · [Report hardware results](https://github.com/elgun-dev/Tuxenix/issues/new?template=hardware-report.yml)
+All owned qualification VMs are stopped. Preserve test records and original
+fixture bases, keep recovery material private, and leave the working laptop
+untouched. Historical reports and manifests identify earlier images; their
+presence does not imply those ISO files remain stored locally.
+
+[Report hardware results](https://github.com/elgun-dev/Tuxenix/issues/new?template=hardware-report.yml)
